@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Home</title>
+    <link>https://example.org/</link>
+    <description>Recent content on Home</description>
+    <generator>Hugo -- 0.134.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Sep 2024 13:56:31 +0100</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Resilience Journey</title>
+      <link>https://example.org/posts/my-resilince-journey/</link>
+      <pubDate>Wed, 18 Sep 2024 13:56:31 +0100</pubDate>
+      <guid>https://example.org/posts/my-resilince-journey/</guid>
+      <description>&lt;p&gt;What does having a growth mindset mean to me? Let me share an experience from my younger days that shaped my understanding of resilience and personal growth.&lt;/p&gt;
+&lt;h2 id=&#34;the-challenge-society-of-actuaries-exam&#34;&gt;The Challenge: Society of Actuaries Exam&lt;/h2&gt;
+&lt;p&gt;I was preparing for my Society of Actuaries P1 exam. The preparation materials were expensive - these books cost north of a hundred dollars at that time. I had gone through the book thoroughly and felt I had a solid conceptual understanding.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
