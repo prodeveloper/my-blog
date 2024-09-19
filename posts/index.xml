@@ -6,8 +6,24 @@
     <description>Recent content in Posts on Home</description>
     <generator>Hugo -- 0.134.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Sep 2024 13:56:31 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2024 16:19:07 +0100</lastBuildDate>
     <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Event Driven Architecture</title>
+      <link>https://example.org/posts/why-event-driven-architecture/</link>
+      <pubDate>Thu, 19 Sep 2024 16:19:07 +0100</pubDate>
+      <guid>https://example.org/posts/why-event-driven-architecture/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a big fan of event-driven architecture. I think it&amp;rsquo;s a great way to build scalable and resilient systems. I thought I would share some of my thoughts in this QnA format&lt;/p&gt;
+&lt;h2 id=&#34;why-use-event-driven-design&#34;&gt;Why use event-driven design?&lt;/h2&gt;
+&lt;p&gt;Event-driven design should be considered for many system designs due to its ability to address common challenges in modern software architecture:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Scalability: Events can be queued and processed asynchronously, allowing for better handling of high loads.&lt;/li&gt;
+&lt;li&gt;Availability: Systems can continue to accept events even if downstream processors are temporarily unavailable.&lt;/li&gt;
+&lt;li&gt;Evolvability: The decoupled nature of event-driven systems makes it easier to modify or replace individual components.&lt;/li&gt;
+&lt;li&gt;Resilience: Queuing mechanisms provide a buffer against failures and allow for easier recovery.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;However, it&amp;rsquo;s important to weigh these benefits against potential drawbacks like increased complexity and the learning curve for developers.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My Resilience Journey</title>
       <link>https://example.org/posts/my-resilince-journey/</link>
