@@ -6,8 +6,18 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.134.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Sep 2024 16:19:07 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 23 Sep 2024 13:18:10 +0100</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Build Career Fintech</title>
+      <link>https://example.org/posts/why-build-career-fintech/</link>
+      <pubDate>Mon, 23 Sep 2024 13:18:10 +0100</pubDate>
+      <guid>https://example.org/posts/why-build-career-fintech/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;I have been giving some thoughts to why domain knowledge is important in building a career in fintech. I thought I could share some of my thoughts on the topic. I have put in QnA format to make it easier to read.&lt;/p&gt;
+&lt;h1 id=&#34;why-focus-on-building-domain-expertise-in-fintech&#34;&gt;Why focus on building domain expertise in fintech?&lt;/h1&gt;
+&lt;p&gt;With the advancements we&amp;rsquo;re seeing in artificial intelligence and development tools, the ability to translate well-defined requirements into code is no longer the primary differentiator it once was. Nvidia CEO Jensen Huang takes it further and says&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Why Event Driven Architecture</title>
       <link>https://example.org/posts/why-event-driven-architecture/</link>
