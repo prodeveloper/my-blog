@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.org/</loc>
+    <lastmod>2024-09-27T09:40:14+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/posts/</loc>
+    <lastmod>2024-09-27T09:40:14+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/posts/working-resistant-stakeholders/</loc>
+    <lastmod>2024-09-27T09:40:14+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/posts/why-build-career-fintech/</loc>
     <lastmod>2024-09-23T13:18:10+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-09-23T13:18:10+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/why-build-career-fintech/</loc>
-    <lastmod>2024-09-23T13:18:10+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/why-event-driven-architecture/</loc>
+    <loc>https://example.org/posts/why-event-driven-architecture/</loc>
     <lastmod>2024-09-19T16:19:07+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/my-resilince-journey/</loc>
+    <loc>https://example.org/posts/my-resilince-journey/</loc>
     <lastmod>2024-09-18T13:56:31+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/my-first-post/</loc>
-    <lastmod>2024-09-18T13:51:34+01:00</lastmod>
+    <loc>https://example.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://example.org/tags/</loc>
   </url>
 </urlset>

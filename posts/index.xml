@@ -2,17 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Home</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://example.org/posts/</link>
     <description>Recent content in Posts on Home</description>
     <generator>Hugo -- 0.134.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Sep 2024 13:18:10 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Sep 2024 09:40:14 +0100</lastBuildDate>
+    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Working Resistant Stakeholders</title>
+      <link>https://example.org/posts/working-resistant-stakeholders/</link>
+      <pubDate>Fri, 27 Sep 2024 09:40:14 +0100</pubDate>
+      <guid>https://example.org/posts/working-resistant-stakeholders/</guid>
+      <description>&lt;h1 id=&#34;working-with-senior-stakeholders-on-new-technology&#34;&gt;Working with Senior Stakeholders on New Technology&lt;/h1&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;How do you convince or work with a senior stakeholder who&amp;rsquo;s pushing back on new technology when you need to win them over? My experience comes from two sides: the startup perspective and the corporate perspective.&lt;/p&gt;
+&lt;h2 id=&#34;startup-perspective&#34;&gt;Startup Perspective&lt;/h2&gt;
+&lt;p&gt;In startups, the biggest issue is risk, specifically the return on investment. Cash is usually tight, and any project or investment you&amp;rsquo;re making is at the expense of another initiative. What you need to show is tangible proof there will be value.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Why Build Career Fintech</title>
-      <link>http://localhost:1313/posts/why-build-career-fintech/</link>
+      <link>https://example.org/posts/why-build-career-fintech/</link>
       <pubDate>Mon, 23 Sep 2024 13:18:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/why-build-career-fintech/</guid>
+      <guid>https://example.org/posts/why-build-career-fintech/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;I have been giving some thoughts to why domain knowledge is important in building a career in fintech. I thought I could share some of my thoughts on the topic. I have put in QnA format to make it easier to read.&lt;/p&gt;
 &lt;h1 id=&#34;why-focus-on-building-domain-expertise-in-fintech&#34;&gt;Why focus on building domain expertise in fintech?&lt;/h1&gt;
@@ -20,9 +31,9 @@
     </item>
     <item>
       <title>Why Event Driven Architecture</title>
-      <link>http://localhost:1313/posts/why-event-driven-architecture/</link>
+      <link>https://example.org/posts/why-event-driven-architecture/</link>
       <pubDate>Thu, 19 Sep 2024 16:19:07 +0100</pubDate>
-      <guid>http://localhost:1313/posts/why-event-driven-architecture/</guid>
+      <guid>https://example.org/posts/why-event-driven-architecture/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a big fan of event-driven architecture. I think it&amp;rsquo;s a great way to build scalable and resilient systems. I thought I would share some of my thoughts in this QnA format&lt;/p&gt;
 &lt;h2 id=&#34;why-use-event-driven-design&#34;&gt;Why use event-driven design?&lt;/h2&gt;
 &lt;p&gt;Event-driven design should be considered for many system designs due to its ability to address common challenges in modern software architecture:&lt;/p&gt;
@@ -36,23 +47,12 @@
     </item>
     <item>
       <title>My Resilience Journey</title>
-      <link>http://localhost:1313/posts/my-resilince-journey/</link>
+      <link>https://example.org/posts/my-resilince-journey/</link>
       <pubDate>Wed, 18 Sep 2024 13:56:31 +0100</pubDate>
-      <guid>http://localhost:1313/posts/my-resilince-journey/</guid>
+      <guid>https://example.org/posts/my-resilince-journey/</guid>
       <description>&lt;p&gt;What does having a growth mindset mean to me? Let me share an experience from my younger days that shaped my understanding of resilience and personal growth.&lt;/p&gt;
 &lt;h2 id=&#34;the-challenge-society-of-actuaries-exam&#34;&gt;The Challenge: Society of Actuaries Exam&lt;/h2&gt;
 &lt;p&gt;I was preparing for my Society of Actuaries P1 exam. The preparation materials were expensive - these books cost north of a hundred dollars at that time. I had gone through the book thoroughly and felt I had a solid conceptual understanding.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Wed, 18 Sep 2024 13:51:34 +0100</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text, and this is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;
-&lt;p&gt;Visit the &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; website!&lt;/p&gt;
-&lt;p&gt;Extra pressure
-git branch -M main&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
