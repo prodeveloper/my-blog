@@ -6,8 +6,17 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Aug 2025 11:07:51 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 21 Aug 2025 13:27:52 +0100</lastBuildDate>
     <atom:link href="https://blog.chenchatech.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When Network Says no</title>
+      <link>https://blog.chenchatech.com/posts/2_when_network_says_no/</link>
+      <pubDate>Thu, 21 Aug 2025 13:27:52 +0100</pubDate>
+      <guid>https://blog.chenchatech.com/posts/2_when_network_says_no/</guid>
+      <description>&lt;p&gt;I recently found myself in a troubleshooting session that taught me an important lesson about assumptions we make in our development workflows. What started as a simple &amp;ldquo;why won&amp;rsquo;t this application start?&amp;rdquo; quickly became a deeper conversation about how we approach dependency management in enterprise environments.&lt;/p&gt;
+&lt;h2 id=&#34;the-problem-unfolds&#34;&gt;The Problem Unfolds&lt;/h2&gt;
+&lt;p&gt;One of our engineers was struggling with a Spring Boot application that wouldn&amp;rsquo;t start on an Azure VM. The error was frustratingly vague - just a &amp;ldquo;connection reset&amp;rdquo; message that gave us little to work with initially. But as we dug deeper, the real issue became clear.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to solve ambigous problems</title>
       <link>https://blog.chenchatech.com/posts/solving-problems-with-who/</link>
