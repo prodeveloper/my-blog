@@ -4,10 +4,18 @@
     <title>Posts on Home</title>
     <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Home</description>
-    <generator>Hugo -- 0.134.2</generator>
+    <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Sep 2024 09:40:14 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 21 Aug 2025 11:07:51 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to solve ambigous problems</title>
+      <link>http://localhost:1313/posts/solving-problems-with-who/</link>
+      <pubDate>Thu, 21 Aug 2025 11:07:51 +0100</pubDate>
+      <guid>http://localhost:1313/posts/solving-problems-with-who/</guid>
+      <description>&lt;p&gt;Picture this: You walk into a new organization, excited about the challenges ahead. Your first assignment? Supporting the gift card service that validates whether someone&amp;rsquo;s gift card is legitimate before processing it. Simple enough, right?&lt;/p&gt;
+&lt;p&gt;Then reality hits. Day two of your new role, and suddenly the app stops working when pushed to production. Key metrics are showing issues across the board. You&amp;rsquo;re staring at a broken system, and you have no idea what&amp;rsquo;s happening.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Working Resistant Stakeholders</title>
       <link>http://localhost:1313/posts/working-resistant-stakeholders/</link>
