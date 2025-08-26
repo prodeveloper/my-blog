@@ -19,6 +19,16 @@
 &lt;p&gt;I support a family, multiple teams, small organizations, am active in the community, and I&amp;rsquo;m still trying to grow myself. All of this takes a lot out of me—time, energy, and capability. As you get into your 30s, most of these responsibilities are really demanding. Having energy to deal with all of that becomes very important.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>When Everything Goes Wrong: Leading Through a Critical System Recovery</title>
+      <link>https://blog.chenchatech.com/posts/4_leading_through_crisis/</link>
+      <pubDate>Fri, 22 Aug 2025 12:52:57 +0100</pubDate>
+      <guid>https://blog.chenchatech.com/posts/4_leading_through_crisis/</guid>
+      <description>&lt;p&gt;As a software engineering manager, I&amp;rsquo;ve faced my share of technical challenges, but nothing quite prepared me for the week when our core loyalty points administration system went completely dark.&lt;/p&gt;
+&lt;h2 id=&#34;the-perfect-storm&#34;&gt;The Perfect Storm&lt;/h2&gt;
+&lt;p&gt;LPA The system that orchestrates this entire operation, let&amp;rsquo;s call it our loyalty platform, had lost connectivity to essential services. We were looking at a potential customer impact that could affect our entire quarterly cycle.&lt;/p&gt;
+&lt;p&gt;The technical details were complex: our replica server in the cloud couldn&amp;rsquo;t communicate with the master server on-premises, authentication services were down, and network connectivity had been severed due to recent security changes. On top of all of this we are working with a strained organization just from hardening exercises.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>When Network Says no</title>
       <link>https://blog.chenchatech.com/posts/2_when_network_says_no/</link>
       <pubDate>Thu, 21 Aug 2025 13:27:52 +0100</pubDate>
