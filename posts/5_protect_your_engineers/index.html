@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Protect your engineers sanity! | Home</title>
+<meta name="keywords" content="">
+<meta name="description" content="There&rsquo;s a significant difference between discussing engineering management principles in theory and applying them during real-world crises. This experience taught me valuable lessons about protecting your team while managing business pressure.
+The Business vs. Quality Paradox
+The Fundamental Truth
+Business stakeholders will always prioritize speed over quality. This isn&rsquo;t inherently wrong it&rsquo;s simply how business operates. However, the responsibility for maintaining quality standards falls squarely on the engineering team and their managers.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/5_protect_your_engineers/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/5_protect_your_engineers/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Home (Alt + H)">Home</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Protect your engineers sanity!
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2025-08-28 21:27:39 +0100 BST'>August 28, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>There&rsquo;s a significant difference between discussing engineering management principles in theory and applying them during real-world crises. This experience taught me valuable lessons about protecting your team while managing business pressure.</p>
+<h2 id="the-business-vs-quality-paradox">The Business vs. Quality Paradox<a hidden class="anchor" aria-hidden="true" href="#the-business-vs-quality-paradox">#</a></h2>
+<h3 id="the-fundamental-truth">The Fundamental Truth<a hidden class="anchor" aria-hidden="true" href="#the-fundamental-truth">#</a></h3>
+<p>Business stakeholders will always prioritize speed over quality. This isn&rsquo;t inherently wrong it&rsquo;s simply how business operates. However, the responsibility for maintaining quality standards falls squarely on the engineering team and their managers.</p>
+<h3 id="the-wardrobe-analogy">The Wardrobe Analogy<a hidden class="anchor" aria-hidden="true" href="#the-wardrobe-analogy">#</a></h3>
+<p>Consider this: if you&rsquo;ve ever looked behind a wardrobe after it&rsquo;s installed, you&rsquo;ll likely notice the wood quality at the back is quite poor. The carpenter knows customers will never see the back once it&rsquo;s mounted on the wall.
+<img alt="alt text" loading="lazy" src="https://storage.googleapis.com/blog-chenchatech-images/5_back_walldrobe.jpeg"></p>
+<p>However, with premium furniture, manufacturers put care into every detail - including the parts you can&rsquo;t see. This attention to hidden quality is what separates good from great.</p>
+<h2 id="the-crisis-scenario">The Crisis Scenario<a hidden class="anchor" aria-hidden="true" href="#the-crisis-scenario">#</a></h2>
+<h3 id="the-situation">The Situation<a hidden class="anchor" aria-hidden="true" href="#the-situation">#</a></h3>
+<p>During our recent system recovery following a major incident that brought down multiple systems, we faced intense pressure to accelerate our restoration process. The recovery required manually kickstarting processes that were normally automated and well-orchestrated.</p>
+<h3 id="the-pressure-builds">The Pressure Builds<a hidden class="anchor" aria-hidden="true" href="#the-pressure-builds">#</a></h3>
+<ul>
+<li>Our systems were down, creating significant business impact</li>
+<li>We needed extensive hand-holding for manual processes</li>
+<li>Only one engineer had the necessary access permissions</li>
+<li>That engineer was already working extra hours to &ldquo;babysit&rdquo; the systems</li>
+</ul>
+<h3 id="the-dangerous-request">The Dangerous Request<a hidden class="anchor" aria-hidden="true" href="#the-dangerous-request">#</a></h3>
+<p>As recovery progressed better than expected, stakeholders began questioning our cautious approach:</p>
+<ul>
+<li>&ldquo;Why are we being so conservative with customer value delivery?&rdquo;</li>
+<li>&ldquo;The system is working and producing expected outputs&rdquo;</li>
+<li>&ldquo;Why not double the processing speed?&rdquo;</li>
+<li>&ldquo;Our customers have suffered enough downtime - let&rsquo;s give them value faster!&rdquo;</li>
+</ul>
+<h2 id="the-leadership-challenge">The Leadership Challenge<a hidden class="anchor" aria-hidden="true" href="#the-leadership-challenge">#</a></h2>
+<h3 id="the-pressure-campaign">The Pressure Campaign<a hidden class="anchor" aria-hidden="true" href="#the-pressure-campaign">#</a></h3>
+<p>The pressure came from multiple directions:</p>
+<ul>
+<li>Several engineering leaders supported the acceleration</li>
+<li>The rationale seemed logical: &ldquo;We&rsquo;re in a critical period&rdquo;</li>
+<li>Customer impact was real and ongoing</li>
+</ul>
+<h3 id="why-i-chose-resistance">Why I Chose Resistance<a hidden class="anchor" aria-hidden="true" href="#why-i-chose-resistance">#</a></h3>
+<p>I decided against the aggressive acceleration approach for several critical reasons:</p>
+<h4 id="the-people-problem">The People Problem<a hidden class="anchor" aria-hidden="true" href="#the-people-problem">#</a></h4>
+<ul>
+<li>Engineers naturally want to help and will say &ldquo;yes&rdquo; to requests from senior leadership</li>
+<li>In a tough tech market, individual contributors feel pressure to demonstrate value</li>
+<li>The engineer would have committed to impossible hours and doubled workload</li>
+<li>Incremental increases in manual work don&rsquo;t scale linearly - each addition creates exponentially worse outcomes</li>
+</ul>
+<h2 id="the-better-approach-strategic-questioning">The Better Approach: Strategic Questioning<a hidden class="anchor" aria-hidden="true" href="#the-better-approach-strategic-questioning">#</a></h2>
+<h3 id="the-conversation-that-changed-everything">The Conversation That Changed Everything<a hidden class="anchor" aria-hidden="true" href="#the-conversation-that-changed-everything">#</a></h3>
+<p>Instead of taking the issue to a larger meeting, I had a direct conversation with one of the directors. I proposed a different approach:</p>
+<p><strong>Instead of asking:</strong> &ldquo;Can you do it or not?&rdquo;<br>
+<strong>Ask instead:</strong> &ldquo;If you were to do it, how would you do it?&rdquo;</p>
+<h3 id="why-this-works">Why This Works<a hidden class="anchor" aria-hidden="true" href="#why-this-works">#</a></h3>
+<p>This reframing accomplishes two crucial things:</p>
+<ol>
+<li><strong>Forces Detailed Thinking</strong>: The engineer must think through all required steps, even if this means lets take it away and get back to you</li>
+<li><strong>Brings Leadership into Reality</strong>: You&rsquo;re pulled into their world instead of speaking from an &ldquo;ivory tower of ignorance&rdquo;</li>
+</ol>
+<h3 id="the-benefits">The Benefits<a hidden class="anchor" aria-hidden="true" href="#the-benefits">#</a></h3>
+<ul>
+<li>You can participate in the thinking process</li>
+<li>Help make informed trade-offs</li>
+<li>Identify unnecessary steps</li>
+<li>Sometimes conclude that the aggressive approach doesn&rsquo;t make sense</li>
+<li>Apply your experience to guide decisions</li>
+</ul>
+<h2 id="the-outcome">The Outcome<a hidden class="anchor" aria-hidden="true" href="#the-outcome">#</a></h2>
+<h3 id="success-through-understanding">Success Through Understanding<a hidden class="anchor" aria-hidden="true" href="#success-through-understanding">#</a></h3>
+<p>The director understood the situation once they grasped the real complexity involved. We successfully avoided what could have been a major disaster.</p>
+<h3 id="the-hidden-costs-we-avoided">The Hidden Costs We Avoided<a hidden class="anchor" aria-hidden="true" href="#the-hidden-costs-we-avoided">#</a></h3>
+<p>Even if we had delivered on the business goals, the negative outcomes would have included:</p>
+<ul>
+<li>Severe impact on engineer wellbeing and future work capacity</li>
+<li>Increased risk of human errors</li>
+<li>Engineers potentially hiding mistakes due to pressure</li>
+</ul>
+<h2 id="key-takeaways-for-engineering-managers">Key Takeaways for Engineering Managers<a hidden class="anchor" aria-hidden="true" href="#key-takeaways-for-engineering-managers">#</a></h2>
+<ul>
+<li><strong>Quality responsibility sits with engineering</strong> - Business will always push for speed</li>
+<li><strong>Protect your team from impossible commitments</strong> - They will say yes even when they shouldn&rsquo;t</li>
+<li><strong>Use strategic questioning</strong> - &ldquo;How would you do it?&rdquo; instead of &ldquo;Can you do it?&rdquo;</li>
+<li><strong>Bring stakeholders into reality</strong> - Help them understand the true complexity</li>
+<li><strong>Consider hidden costs</strong> - Fast delivery today might create bigger problems tomorrow</li>
+<li><strong>Trust your experience</strong> - Sometimes the conservative approach is the right approach</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Home</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
