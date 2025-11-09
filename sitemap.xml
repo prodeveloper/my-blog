@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.chenchatech.com/posts/15_relationships_beyond_networking/</loc>
-    <lastmod>2025-10-29T11:45:49+00:00</lastmod>
-  </url><url>
     <loc>https://blog.chenchatech.com/</loc>
-    <lastmod>2025-10-29T11:45:49+00:00</lastmod>
+    <lastmod>2025-11-03T11:52:16+00:00</lastmod>
   </url><url>
     <loc>https://blog.chenchatech.com/posts/</loc>
+    <lastmod>2025-11-03T11:52:16+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.chenchatech.com/posts/16_reading_types/</loc>
+    <lastmod>2025-11-03T11:52:16+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.chenchatech.com/posts/15_relationships_beyond_networking/</loc>
     <lastmod>2025-10-29T11:45:49+00:00</lastmod>
   </url><url>
     <loc>https://blog.chenchatech.com/posts/14_make_it_easier/</loc>
