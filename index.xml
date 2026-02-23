@@ -6,8 +6,18 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Nov 2025 11:52:16 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 13:28:22 +0000</lastBuildDate>
     <atom:link href="https://blog.chenchatech.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Want Better AI Results? Dumb Down Your Prompts</title>
+      <link>https://blog.chenchatech.com/posts/17_teach_like_5_year_old/</link>
+      <pubDate>Mon, 23 Feb 2026 13:28:22 +0000</pubDate>
+      <guid>https://blog.chenchatech.com/posts/17_teach_like_5_year_old/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Explain this to me like I&amp;rsquo;m a smart five-year-old.&amp;rdquo; Interesting advice — and it turns out, it&amp;rsquo;s one of the most effective ways to improve your AI prompts.&lt;/p&gt;
+&lt;p&gt;When you use this technique, you end up with a prompt that not only &lt;em&gt;you&lt;/em&gt; understand, but one that tends to give &lt;strong&gt;much more predictable results&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;the-problem-with-powerful-models&#34;&gt;The Problem With Powerful Models&lt;/h2&gt;
+&lt;p&gt;Most of the time, the AI you&amp;rsquo;re working with is a frontier model — something from Anthropic like an Opus model, or a reasoning model from OpenAI. Basically, something that is &lt;em&gt;really&lt;/em&gt; powerful.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Strategies to read content in work setting</title>
       <link>https://blog.chenchatech.com/posts/16_reading_types/</link>
