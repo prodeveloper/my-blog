@@ -6,8 +6,21 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2026 14:38:31 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2026 17:52:03 +0000</lastBuildDate>
     <atom:link href="https://blog.chenchatech.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I Just Wanted to Check My Gmail from the Terminal</title>
+      <link>https://blog.chenchatech.com/posts/21_battle_with_gws/</link>
+      <pubDate>Tue, 10 Mar 2026 17:52:03 +0000</pubDate>
+      <guid>https://blog.chenchatech.com/posts/21_battle_with_gws/</guid>
+      <description>&lt;p&gt;It started with a simple idea: use Claude to check my Gmail without opening a browser.&lt;/p&gt;
+&lt;p&gt;I found a CLI tool called &lt;code&gt;gws&lt;/code&gt;, the Google Workspace CLI. It promised to let you query Drive, Gmail, Calendar, Sheets, all from the terminal. Perfect. I installed it, set up OAuth credentials in Google Cloud Console, and ran &lt;code&gt;gws auth login&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;And immediately hit a wall.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;the-first-error-invalid_client&#34;&gt;The first error: invalid_client&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;OAuth flow failed: Server error: invalid_client: Unauthorized
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;invalid_client&lt;/code&gt; is Google&amp;rsquo;s way of saying: I don&amp;rsquo;t recognise these credentials at all. Not a permissions issue. Not a scope issue. The credentials themselves were wrong.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How I Recovered 66GB on My Laptop Using Claude</title>
       <link>https://blog.chenchatech.com/posts/20_how_i_recovered_66gb_on_my_laptop_using_claude/</link>
