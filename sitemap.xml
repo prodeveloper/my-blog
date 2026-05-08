@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.chenchatech.com/</loc>
-    <lastmod>2026-03-10T17:52:03+00:00</lastmod>
+    <loc>https://blog.chenchatech.com/posts/22_excited_meh_or_concerned/</loc>
+    <lastmod>2026-05-08T17:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.chenchatech.com/posts/21_battle_with_gws/</loc>
-    <lastmod>2026-03-10T17:52:03+00:00</lastmod>
+    <loc>https://blog.chenchatech.com/</loc>
+    <lastmod>2026-05-08T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.chenchatech.com/posts/</loc>
+    <lastmod>2026-05-08T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.chenchatech.com/posts/21_battle_with_gws/</loc>
     <lastmod>2026-03-10T17:52:03+00:00</lastmod>
   </url><url>
     <loc>https://blog.chenchatech.com/posts/20_how_i_recovered_66gb_on_my_laptop_using_claude/</loc>

@@ -6,8 +6,16 @@
     <description>Recent content in Posts on Home</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Mar 2026 17:52:03 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 17:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.chenchatech.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Excited, Meh, or Concerned</title>
+      <link>https://blog.chenchatech.com/posts/22_excited_meh_or_concerned/</link>
+      <pubDate>Fri, 08 May 2026 17:00:00 +0000</pubDate>
+      <guid>https://blog.chenchatech.com/posts/22_excited_meh_or_concerned/</guid>
+      <description>&lt;p&gt;I was sitting in a discovery session for a deal that, on paper, we had to do.&lt;/p&gt;
+&lt;p&gt;A big partner — one already financing a meaningful chunk of our team&amp;rsquo;s work — wanted us to integrate with a new product of theirs. They&amp;rsquo;d spent a lot of money buying the capability into their stack. From our side, the awkward part: we already had something similar of our own. Different audience, different mechanics, but close enough that the proposal didn&amp;rsquo;t feel like it was solving a fresh problem. It felt like it was crowding one we already had.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>I Just Wanted to Check My Gmail from the Terminal</title>
       <link>https://blog.chenchatech.com/posts/21_battle_with_gws/</link>
