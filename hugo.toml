@@ -1,0 +1,5 @@
+baseURL = "https://blog.chenchatech.com/"
+languageCode = "en"
+title = "ChenchaTech Blog"
+theme = "PaperMod"
+buildFuture = true
