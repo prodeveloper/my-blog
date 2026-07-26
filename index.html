@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.148.2"><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.155.3"><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Home</title>
+<title>ChenchaTech Blog</title>
 
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="https://blog.chenchatech.com/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" type="image/png" sizes="32x32" href="https://blog.chenchatech.com/favicon-32x32.png">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6ff46447b1fa3f8a5cc0bcae48088decc3ae37f5fbc99406a3aefc3bf0e6044a.css" integrity="sha256-b/RkR7H6P4pcwLyuSAiN7MOuN/X7yZQGo678O/DmBEo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.chenchatech.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://blog.chenchatech.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.chenchatech.com/favicon-32x32.png">
 <link rel="apple-touch-icon" href="https://blog.chenchatech.com/apple-touch-icon.png">
 <link rel="mask-icon" href="https://blog.chenchatech.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://blog.chenchatech.com/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://blog.chenchatech.com/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="https://blog.chenchatech.com/">
 <noscript>
     <style>
@@ -40,44 +41,45 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+            .toc {
+                background: var(--entry);
             }
         }
 
     </style>
 </noscript>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LWQJCD08R8"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-LWQJCD08R8');
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
 </script><meta property="og:url" content="https://blog.chenchatech.com/">
-  <meta property="og:site_name" content="Home">
-  <meta property="og:title" content="Home">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:site_name" content="ChenchaTech Blog">
+  <meta property="og:title" content="ChenchaTech Blog">
+  <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Home">
-<meta name="twitter:description" content="">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ChenchaTech Blog">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Home",
+  "name": "ChenchaTech Blog",
   "url": "https://blog.chenchatech.com/",
   "description": "",
   "logo": "https://blog.chenchatech.com/favicon.ico",
@@ -87,31 +89,19 @@
 }
 </script>
 </head>
-
 <body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
-            <a href="https://blog.chenchatech.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            <a href="https://blog.chenchatech.com/" accesskey="h" title="ChenchaTech Blog (Alt + H)">ChenchaTech Blog</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -127,13 +117,28 @@
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
         </ul>
     </nav>
 </header>
 <main class="main"> 
 
 <article class="first-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Onboarding Nkosi
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>An example post will be deleted soon.
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-07-26 20:00:00 +0100 BST'>July 26, 2026</span></footer>
+  <a class="entry-link" aria-label="post link to Onboarding Nkosi" href="https://blog.chenchatech.com/posts/onboarding-nkosi/"></a>
+</article>
+
+<article class="post-entry"> 
   <header class="entry-header">
     <h2 class="entry-hint-parent">What Is the Number?
     </h2>
@@ -144,7 +149,9 @@ Coming back, I felt a little anxious. As it turns out, the anxiety was probably 
 Boom. 200 emails. Hundreds of Teams notifications. Every channel demanding attention at once. And of course, the schedule waiting on the other side of the inbox didn’t pause while I was gone.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-05-08 12:00:00 +0000 UTC'>May 8, 2026</span></footer>
+  <footer class="entry-footer">
+
+<span title='2026-05-08 12:00:00 +0000 UTC'>May 8, 2026</span></footer>
   <a class="entry-link" aria-label="post link to What Is the Number?" href="https://blog.chenchatech.com/posts/23_what_is_the_number/"></a>
 </article>
 
@@ -158,7 +165,9 @@ Boom. 200 emails. Hundreds of Teams notifications. Every channel demanding atten
 A big partner, one already financing a meaningful chunk of our team’s work : wanted us to integrate with a new product of theirs. They’d spent a lot of money buying the capability into their stack. From our side, the awkward part: we already had something similar of our own. Different audience, different mechanics, but close enough that the proposal didn’t feel like it was solving a fresh problem. It felt like it was crowding one we already had.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-04-08 17:00:00 +0000 UTC'>April 8, 2026</span></footer>
+  <footer class="entry-footer">
+
+<span title='2026-04-08 17:00:00 +0000 UTC'>April 8, 2026</span></footer>
   <a class="entry-link" aria-label="post link to Excited, Meh, or Concerned" href="https://blog.chenchatech.com/posts/22_excited_meh_or_concerned/"></a>
 </article>
 
@@ -174,7 +183,9 @@ And immediately hit a wall.
 The first error: invalid_client OAuth flow failed: Server error: invalid_client: Unauthorized invalid_client is Google’s way of saying: I don’t recognise these credentials at all. Not a permissions issue. Not a scope issue. The credentials themselves were wrong.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-10 17:52:03 +0000 UTC'>March 10, 2026</span></footer>
+  <footer class="entry-footer">
+
+<span title='2026-03-10 17:52:03 +0000 UTC'>March 10, 2026</span></footer>
   <a class="entry-link" aria-label="post link to I Just Wanted to Check My Gmail from the Terminal" href="https://blog.chenchatech.com/posts/21_battle_with_gws/"></a>
 </article>
 
@@ -189,7 +200,9 @@ I knew the usual suspects (too many apps, too many downloads), but the numbers n
 What followed was one of the most satisfying cleanup sessions I’ve had in years.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-08 14:38:31 +0000 UTC'>March 8, 2026</span></footer>
+  <footer class="entry-footer">
+
+<span title='2026-03-08 14:38:31 +0000 UTC'>March 8, 2026</span></footer>
   <a class="entry-link" aria-label="post link to How I Recovered 66GB on My Laptop Using Claude" href="https://blog.chenchatech.com/posts/20_how_i_recovered_66gb_on_my_laptop_using_claude/"></a>
 </article>
 
@@ -204,7 +217,9 @@ What actually taught me how to network was moving to a different country.
 The Water You Didn’t Know You Had When I relocated, I lost something I’d never thought about: an existing network. Where I grew up, there was a built-in support structure: family, friends, people who knew me and vouched for me by default. I didn’t notice it because I’d never lived without it.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-04 17:40:35 +0000 UTC'>March 4, 2026</span></footer>
+  <footer class="entry-footer">
+
+<span title='2026-03-04 17:40:35 +0000 UTC'>March 4, 2026</span></footer>
   <a class="entry-link" aria-label="post link to My Philosophy on Networking" href="https://blog.chenchatech.com/posts/19_my_philosophy_on_networking/"></a>
 </article>
 
@@ -219,7 +234,9 @@ When I say power, I mean your ability to influence others and get what you need 
 Personal Power When you start out, you usually have a lot of personal power. As an engineer, you’re writing code, shipping features, writing documentation. You’re known for your expertise and respected for it.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-04 17:32:00 +0000 UTC'>March 4, 2026</span></footer>
+  <footer class="entry-footer">
+
+<span title='2026-03-04 17:32:00 +0000 UTC'>March 4, 2026</span></footer>
   <a class="entry-link" aria-label="post link to Relationship Power vs Personal Power" href="https://blog.chenchatech.com/posts/18_relationship_vs_personal_power/"></a>
 </article>
 
@@ -234,7 +251,9 @@ When you use this technique, you end up with a prompt that not only you understa
 The Problem With Powerful Models Most of the time, the AI you’re working with is a frontier model — something from Anthropic like an Opus model, or a reasoning model from OpenAI. Basically, something that is really powerful.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-02-23 13:28:22 +0000 UTC'>February 23, 2026</span></footer>
+  <footer class="entry-footer">
+
+<span title='2026-02-23 13:28:22 +0000 UTC'>February 23, 2026</span></footer>
   <a class="entry-link" aria-label="post link to Want Better AI Results? Dumb Down Your Prompts" href="https://blog.chenchatech.com/posts/17_teach_like_5_year_old/"></a>
 </article>
 
@@ -250,7 +269,9 @@ Let me break down four distinct types of reading and how to approach each one ef
 Type 1: Reading to Extract The goal here is to scan quickly. This is where LLM tools like ChatGPT can be useful.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-11-03 11:52:16 +0000 UTC'>November 3, 2025</span></footer>
+  <footer class="entry-footer">
+
+<span title='2025-11-03 11:52:16 +0000 UTC'>November 3, 2025</span></footer>
   <a class="entry-link" aria-label="post link to Strategies to read content in work setting" href="https://blog.chenchatech.com/posts/16_reading_types/"></a>
 </article>
 
@@ -264,23 +285,10 @@ Type 1: Reading to Extract The goal here is to scan quickly. This is where LLM t
 The common advice given here is “it’s not what you know, it’s who you know.” I think this advice has a fundamental flaw not the first part, but the second part. It’s not really who you know, it’s who knows you
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-10-29 11:45:49 +0000 UTC'>October 29, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Building Relationships That Matter" href="https://blog.chenchatech.com/posts/15_relationships_beyond_networking/"></a>
-</article>
+  <footer class="entry-footer">
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Making projects feel effortless
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> (image credit: https://emmavtanner.com/2022/01/08/surface-pressure/)
-Here’s something I’ve been thinking about: you can control the inputs, but not the outputs. This perspective comes into play when you consider the anxiety that comes with taking on something new. The pressure can be overwhelming.
-The Reality of Effort vs. Results You cannot do magic. Let me give you an example. Think about losing weight. You can wish all you want “I wish this would happen, I wish I could do it, maintain it” but nothing happens without the actual actions you can take. Maybe you need to cut something out of your diet, or start exercising, or work with a personal trainer. These are the specific activities you can control.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-10-25 19:59:14 +0100 BST'>October 25, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Making projects feel effortless" href="https://blog.chenchatech.com/posts/14_make_it_easier/"></a>
+<span title='2025-10-29 11:45:49 +0000 UTC'>October 29, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Building Relationships That Matter" href="https://blog.chenchatech.com/posts/15_relationships_beyond_networking/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
@@ -291,24 +299,33 @@ The Reality of Effort vs. Results You cannot do magic. Let me give you an exampl
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://blog.chenchatech.com/">Home</a></span> · 
+        <span>&copy; 2026 <a href="https://blog.chenchatech.com/">ChenchaTech Blog</a></span> · 
 
+    
+    
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -335,25 +352,25 @@ The Reality of Effort vs. Results You cannot do magic. Let me give you an exampl
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.148.2"><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.155.3"><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Home</title>
+<title>ChenchaTech Blog</title>
 
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="https://blog.chenchatech.com/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" type="image/png" sizes="32x32" href="https://blog.chenchatech.com/favicon-32x32.png">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6ff46447b1fa3f8a5cc0bcae48088decc3ae37f5fbc99406a3aefc3bf0e6044a.css" integrity="sha256-b/RkR7H6P4pcwLyuSAiN7MOuN/X7yZQGo678O/DmBEo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.chenchatech.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://blog.chenchatech.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.chenchatech.com/favicon-32x32.png">
 <link rel="apple-touch-icon" href="https://blog.chenchatech.com/apple-touch-icon.png">
 <link rel="mask-icon" href="https://blog.chenchatech.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://blog.chenchatech.com/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://blog.chenchatech.com/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="https://blog.chenchatech.com/">
 <noscript>
     <style>
@@ -40,44 +41,45 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+            .toc {
+                background: var(--entry);
             }
         }
 
     </style>
 </noscript>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LWQJCD08R8"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-LWQJCD08R8');
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
 </script><meta property="og:url" content="https://blog.chenchatech.com/">
-  <meta property="og:site_name" content="Home">
-  <meta property="og:title" content="Home">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:site_name" content="ChenchaTech Blog">
+  <meta property="og:title" content="ChenchaTech Blog">
+  <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Home">
-<meta name="twitter:description" content="">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ChenchaTech Blog">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Home",
+  "name": "ChenchaTech Blog",
   "url": "https://blog.chenchatech.com/",
   "description": "",
   "logo": "https://blog.chenchatech.com/favicon.ico",
@@ -87,31 +89,19 @@
 }
 </script>
 </head>
-
 <body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
-            <a href="https://blog.chenchatech.com/" accesskey="h" title="Home (Alt + H)">Home</a>
+            <a href="https://blog.chenchatech.com/" accesskey="h" title="ChenchaTech Blog (Alt + H)">ChenchaTech Blog</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -127,11 +117,28 @@
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
         </ul>
     </nav>
 </header>
 <main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Managing energy and sleep: The Chencha way
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+Why Energy Management Matters I’ve been thinking about the factors that make you energetic and help you get through the day. The biggest factors I believe are diet exercise and sleep. I’ve been reflecting on this a lot because I’ve come to realize that life is really getting busy.
+I support a family, multiple teams, small organizations, am active in the community, and I’m still trying to grow myself. All of this takes a lot out of me—time, energy, and capability. As you get into your 30s, most of these responsibilities are really demanding. Having energy to deal with all of that becomes very important.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2025-08-24 12:25:21 +0100 BST'>August 24, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Managing energy and sleep: The Chencha way" href="https://blog.chenchatech.com/posts/3_how_and_why_sleep_well/"></a>
+</article>
 
 <article class="post-entry"> 
   <header class="entry-header">
@@ -144,7 +151,9 @@ The Perfect Storm LPA The system that orchestrates this entire operation, let’
 The technical details were complex: our replica server in the cloud couldn’t communicate with the master server on-premises, authentication services were down, and network connectivity had been severed due to recent security changes. On top of all of this we are working with a strained organization just from hardening exercises.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-08-22 12:52:57 +0100 BST'>August 22, 2025</span></footer>
+  <footer class="entry-footer">
+
+<span title='2025-08-22 12:52:57 +0100 BST'>August 22, 2025</span></footer>
   <a class="entry-link" aria-label="post link to When Everything Goes Wrong: Leading Through a Critical System Recovery" href="https://blog.chenchatech.com/posts/4_leading_through_crisis/"></a>
 </article>
 
@@ -158,7 +167,9 @@ The technical details were complex: our replica server in the cloud couldn’t c
 The Problem Unfolds One of our engineers was struggling with a Spring Boot application that wouldn’t start on an Azure VM. The error was frustratingly vague - just a “connection reset” message that gave us little to work with initially. But as we dug deeper, the real issue became clear.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-08-21 13:27:52 +0100 BST'>August 21, 2025</span></footer>
+  <footer class="entry-footer">
+
+<span title='2025-08-21 13:27:52 +0100 BST'>August 21, 2025</span></footer>
   <a class="entry-link" aria-label="post link to When Network Says no" href="https://blog.chenchatech.com/posts/2_when_network_says_no/"></a>
 </article>
 
@@ -172,7 +183,9 @@ The Problem Unfolds One of our engineers was struggling with a Spring Boot appli
 Then reality hits. Day two of your new role, and suddenly the app stops working when pushed to production. Key metrics are showing issues across the board. You’re staring at a broken system, and you have no idea what’s happening.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-08-21 11:07:51 +0100 BST'>August 21, 2025</span></footer>
+  <footer class="entry-footer">
+
+<span title='2025-08-21 11:07:51 +0100 BST'>August 21, 2025</span></footer>
   <a class="entry-link" aria-label="post link to How to solve ambigous problems" href="https://blog.chenchatech.com/posts/solving-problems-with-who/"></a>
 </article>
 
@@ -188,7 +201,9 @@ To solve the problem of localhost appearing in prod
 ensure setup done on hugo.toml run ❯ hugo --environment production Push changes to prod Moving the project around:
 archived and uploaded to gdrive </p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-21 13:05:53 +0100 +0100'>January 21, 2025</span></footer>
+  <footer class="entry-footer">
+
+<span title='2025-01-21 13:05:53 +0100 +0100'>January 21, 2025</span></footer>
   <a class="entry-link" aria-label="post link to hugo tips" href="https://blog.chenchatech.com/posts/1_hugo_tips/"></a>
 </article>
 
@@ -202,7 +217,9 @@ archived and uploaded to gdrive </p>
 Startup Perspective In startups, the biggest issue is risk, specifically the return on investment. Cash is usually tight, and any project or investment you’re making is at the expense of another initiative. What you need to show is tangible proof there will be value.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-09-27 09:40:14 +0100 BST'>September 27, 2024</span></footer>
+  <footer class="entry-footer">
+
+<span title='2024-09-27 09:40:14 +0100 BST'>September 27, 2024</span></footer>
   <a class="entry-link" aria-label="post link to Working Resistant Stakeholders" href="https://blog.chenchatech.com/posts/working-resistant-stakeholders/"></a>
 </article>
 
@@ -216,7 +233,9 @@ Startup Perspective In startups, the biggest issue is risk, specifically the ret
 Why focus on building domain expertise in fintech? With the advancements we’re seeing in artificial intelligence and development tools, the ability to translate well-defined requirements into code is no longer the primary differentiator it once was. Nvidia CEO Jensen Huang takes it further and says
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-09-23 13:18:10 +0100 BST'>September 23, 2024</span></footer>
+  <footer class="entry-footer">
+
+<span title='2024-09-23 13:18:10 +0100 BST'>September 23, 2024</span></footer>
   <a class="entry-link" aria-label="post link to Why Build Career Fintech" href="https://blog.chenchatech.com/posts/why-build-career-fintech/"></a>
 </article>
 
@@ -231,7 +250,9 @@ Why use event-driven design? Event-driven design should be considered for many s
 Scalability: Events can be queued and processed asynchronously, allowing for better handling of high loads. Availability: Systems can continue to accept events even if downstream processors are temporarily unavailable. Evolvability: The decoupled nature of event-driven systems makes it easier to modify or replace individual components. Resilience: Queuing mechanisms provide a buffer against failures and allow for easier recovery. However, it’s important to weigh these benefits against potential drawbacks like increased complexity and the learning curve for developers.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-09-19 16:19:07 +0100 BST'>September 19, 2024</span></footer>
+  <footer class="entry-footer">
+
+<span title='2024-09-19 16:19:07 +0100 BST'>September 19, 2024</span></footer>
   <a class="entry-link" aria-label="post link to Why Event Driven Architecture" href="https://blog.chenchatech.com/posts/why-event-driven-architecture/"></a>
 </article>
 
@@ -245,7 +266,9 @@ Scalability: Events can be queued and processed asynchronously, allowing for bet
 The Challenge: Society of Actuaries Exam I was preparing for my Society of Actuaries P1 exam. The preparation materials were expensive - these books cost north of a hundred dollars at that time. I had gone through the book thoroughly and felt I had a solid conceptual understanding.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-09-18 13:56:31 +0100 BST'>September 18, 2024</span></footer>
+  <footer class="entry-footer">
+
+<span title='2024-09-18 13:56:31 +0100 BST'>September 18, 2024</span></footer>
   <a class="entry-link" aria-label="post link to My Resilience Journey" href="https://blog.chenchatech.com/posts/my-resilince-journey/"></a>
 </article>
 <footer class="page-footer">
@@ -258,24 +281,33 @@ The Challenge: Society of Actuaries Exam I was preparing for my Society of Actua
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://blog.chenchatech.com/">Home</a></span> · 
+        <span>&copy; 2026 <a href="https://blog.chenchatech.com/">ChenchaTech Blog</a></span> · 
 
+    
+    
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -302,25 +334,25 @@ The Challenge: Society of Actuaries Exam I was preparing for my Society of Actua
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })
