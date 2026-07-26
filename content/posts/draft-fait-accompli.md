@@ -6,6 +6,8 @@ draft = true
 
 ---
 
+![Empty boardroom at dawn — the meeting before the meeting](/images/meeting-before-meeting.png)
+
 There's a pattern in strategy work that I keep coming back to. It's called **Fait Accompli** (French for "an accomplished fact"). The idea is simple: by the time you walk into the big meeting, the decision should already be made.
 
 You don't get there by being the smartest person in the room. You get there by doing the work before the work.
