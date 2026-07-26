@@ -1,7 +1,7 @@
 +++
 title = 'The Meeting Before the Meeting'
 date = 2026-07-28T08:00:00+01:00
-draft = true
+draft = false
 +++
 
 ---
