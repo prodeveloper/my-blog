@@ -6,8 +6,6 @@ draft = false
 
 ---
 
-![Empty boardroom at dawn — the meeting before the meeting](/images/24-boardroom-dawn.png)
-
 ![Chessboard mid-setup — the real work happens before the game starts](/images/24-chess-setup.png)
 
 There's a pattern in strategy work that I keep coming back to. It's called **Fait Accompli** (French for "an accomplished fact"). The idea is simple: by the time you walk into the big meeting, the decision should already be made.

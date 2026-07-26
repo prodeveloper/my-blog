@@ -22,7 +22,7 @@ Within seconds it ran a scan and gave me a breakdown I'd never seen before. Not 
 The top offenders:
 
 - **Docker**: 29GB sitting in a container VM that I hadn't touched in months
-- **Microsoft Office** (Outlook, OneNote, Teams, OneDrive): 19GB — from a company I no longer work for
+- **Microsoft Office** (Outlook, OneNote, Teams, OneDrive): 19GB, from a company I no longer work for
 - **Google Drive & Chrome app support**: 8.8GB
 - **Descript**: 2.7GB
 - **App caches**: 5.3GB
@@ -52,7 +52,7 @@ Slack, Logseq, Cursor, Kreya: somewhere in **2024**.
 
 None of these sparked any urgency in me when I saw the list. I kept calibre, SimpleMind, and Chrome. Everything else went.
 
-That's the thing about storage — apps don't announce when they've become dead weight. They just sit there, quietly taking up space, waiting for a day that never comes.
+That's the thing about storage. Apps don't announce when they've become dead weight. They just sit there, quietly taking up space, waiting for a day that never comes.
 
 ---
 
@@ -61,7 +61,7 @@ That's the thing about storage — apps don't announce when they've become dead 
 If you're a developer, your machine has a second layer of bloat that most cleanup guides ignore.
 
 - **Docker's VM disk** had ballooned to 29GB even after I'd long stopped using those containers. `docker system prune -a` cleared 5GB of images. Shrinking the VM disk in Docker Desktop settings recovered the rest.
-- **VS Code extensions** — specifically old versions of Claude Code — had accumulated 14 copies of the same extension, totalling over 2GB.
+- **VS Code extensions** (specifically old versions of Claude Code) had accumulated 14 copies of the same extension, totalling over 2GB.
 - **npm cache**: 2.3GB of packages I'd never need again.
 - **Whisper model cache**: 2GB for an AI transcription model I'd tested once.
 
@@ -75,7 +75,7 @@ We started at **5GB free**. After a few hours of methodical cleanup:
 
 **73GB free.**
 
-That's 68GB recovered — more than a quarter of my total disk — without deleting a single file I actually needed.
+That's 68GB recovered. More than a quarter of my total disk, without deleting a single file I actually needed.
 
 ---
 
@@ -83,13 +83,13 @@ That's 68GB recovered — more than a quarter of my total disk — without delet
 
 A few habits I'm taking away from this:
 
-**When you leave a job, uninstall their software.** Office, VPNs, collaboration tools — all of it. Don't let the digital residue of old roles pile up on your machine.
+**When you leave a job, uninstall their software.** Office, VPNs, collaboration tools. All of it. Don't let the digital residue of old roles pile up on your machine.
 
 **Check last-opened dates once a year.** macOS tracks this. If you haven't opened something in six months, you probably don't need it.
 
-**Developer caches need manual attention.** Docker, npm, pip, Homebrew — none of these clean themselves up. Add `brew cleanup` and `docker system prune` to your routine.
+**Developer caches need manual attention.** Docker, npm, pip, Homebrew. None of these clean themselves up. Add `brew cleanup` and `docker system prune` to your routine.
 
-**The stuff you don't see costs the most.** The Downloads folder is obvious. The 14 copies of an extension you auto-updated, the Whisper model you tested once, the VM disk from a side project — that's where the real waste hides.
+**The stuff you don't see costs the most.** The Downloads folder is obvious. The 14 copies of an extension you auto-updated, the Whisper model you tested once, the VM disk from a side project. That's where the real waste hides.
 
 ---
 

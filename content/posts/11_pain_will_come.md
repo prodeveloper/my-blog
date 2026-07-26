@@ -5,7 +5,7 @@ draft = false
 +++
 
 ![alt text](https://storage.googleapis.com/blog-chenchatech-images/11_pain_will_come.jpg)
-When we talk about achieving anything meaningful, it needs to be grounded in good habits and a strong sense of discipline. It can't be built on wishful thinking alone—it must be rooted in consistent, deliberate action.
+When we talk about achieving anything meaningful, it needs to be grounded in good habits and a strong sense of discipline. It can't be built on wishful thinking alone. It must be rooted in consistent, deliberate action.
 
 There's been plenty written about habit formation, but I've found it helpful to think about it through a simpler lens: **the idea of pain**.
 
@@ -19,7 +19,7 @@ Take software development as an example. Let's say you've decided to move toward
 - How should the output look?
 - What should this function return?
 
-It requires real mental effort. Compare that to just writing the code intuitively and seeing what happens—which feels much easier in the moment because you already have a sense of how the code should function.
+It requires real mental effort. Compare that to just writing the code intuitively and seeing what happens. Which feels much easier in the moment because you already have a sense of how the code should function.
 
 ## The Temptation to Defer the Pain
 
@@ -27,7 +27,7 @@ You see this pattern everywhere. When businesses ask for something and you're un
 
 **But here's what most people don't realize: the pain never goes away.**
 
-In fact, what happens is the pain **compounds**—it gains interest at an alarming rate.
+In fact, what happens is the pain **compounds**. It gains interest at an alarming rate.
 
 ### How Technical Debt Compounds
 
@@ -48,7 +48,7 @@ Now you're forced to:
 
 Sure, maybe you moved fast initially. Something shipped, stakeholders were happy. If you managed to grab a promotion and move to a different team, good for you.
 
-But if you're still there? What happens when the next requirement comes along—as customer needs inevitably evolve?
+But if you're still there? What happens when the next requirement comes along, as customer needs inevitably evolve?
 
 **The whole point of software is that it's soft**—it should change. That's why it's not called hardware. When people commission a building, they expect it to stay put for decades. But with software, they expect the behavior to adapt to customer needs constantly. **Software's value isn't in longevity; it's in adaptability.**
 
@@ -58,9 +58,9 @@ When stakeholders request a change, you suddenly find that making any modificati
 
 ## Beyond Software: Life Patterns
 
-This principle extends far beyond the tech and business context—it flows through life itself.
+This principle extends far beyond the tech and business context. It flows through life itself.
 
-Maybe there's something you know you need to address. Perhaps you love sweets but don't have the best dental hygiene habits. The change feels painful: it means sacrificing what you enjoy or changing your daily routine—maybe rinsing after every sweet treat.
+Maybe there's something you know you need to address. Perhaps you love sweets but don't have the best dental hygiene habits. The change feels painful: it means sacrificing what you enjoy or changing your daily routine, maybe rinsing after every sweet treat.
 
 These are small changes, but they do require movement from what you normally do. **And all change is painful.**
 
@@ -76,4 +76,4 @@ The pain has compounded.
 
 Whenever you find yourself trying to form a habit and you feel that initial pain, **always ask yourself: How will this pain compound over time?**
 
-The small discomfort you're avoiding today doesn't disappear—it grows with interest. The question isn't whether you'll face pain, but when, and how much worse it will be if you wait.
+The small discomfort you're avoiding today doesn't disappear. It grows with interest. The question isn't whether you'll face pain, but when, and how much worse it will be if you wait.

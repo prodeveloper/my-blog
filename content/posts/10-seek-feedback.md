@@ -12,13 +12,13 @@ One of the things I've been thinking about for quite a while in organizational s
 
 I was having a conversation with my daughter one day, asking her how everything was going at school. She gave me this fascinating response: "I don't know. The teacher normally tells you how I'm doing, but they don't tell me how I'm doing."
 
-That was quite an interesting statement. I could see how she'd think like that—for a long time, I used to think the same way. My strategy was simple: as long as I'm not getting any feedback from someone, that's good enough.
+That was quite an interesting statement. I could see how she'd think like that. For a long time, I used to think the same way. My strategy was simple: as long as I'm not getting any feedback from someone, that's good enough.
 
 **But here's what I've come to understand in working life: that's a terrible strategy.**
 
 ## Why Silence Isn't Golden
 
-People are generally quite kind. Unless there's a good reason, they won't tell you bad news. What ends up happening is you develop a certain amount of strategic blindness—you actually don't know what's going on, where you have gaps, or what you need to improve.
+People are generally quite kind. Unless there's a good reason, they won't tell you bad news. What ends up happening is you develop a certain amount of strategic blindness. You actually don't know what's going on, where you have gaps, or what you need to improve.
 
 Now, in large organizations like Meta where I used to work, it was easier to find out because of 360-degree feedback and a strong feedback culture. But even in those situations, **most of the feedback you get tends to be overwhelmingly positive**. That's because people know these tools can be used during performance cycles.
 
@@ -33,7 +33,7 @@ Here's the thing about perception:
 - It can be lost in moments
 - Once set, it's very, very hard to change
 
-It takes years to build trust but moments to lose all of that trust. Something might be happening that you're not aware of—maybe a certain habit you've picked up, how you write your comments, how you work with others, even your attitude toward work. If that's happening, you need to know.
+It takes years to build trust but moments to lose all of that trust. Something might be happening that you're not aware of. Maybe a certain habit you've picked up, how you write your comments, how you work with others, even your attitude toward work. If that's happening, you need to know.
 
 ## How to Actually Get Useful Feedback
 
@@ -49,7 +49,7 @@ I've really grown to hate comments like "You're nice" or "You're a nice person."
 
 For example, you might say:
 - "We've just completed Project ABCD. I was trying to demonstrate behaviors X, Y, and Z. How did I do?"
-- "I've been working on my communication skills to ensure I'm bringing all my stakeholders along. We just finished this project—how did I do on that goal?"
+- "I've been working on my communication skills to ensure I'm bringing all my stakeholders along. We just finished this project. How did I do on that goal?"
 
 That's very specific, and someone can tell you: "On this item you did well" or "On this item you didn't do well." 
 
@@ -57,15 +57,15 @@ It's absolutely fine if some people don't tell you. Some people are just going t
 
 ## When Someone Gives You Feedback
 
-**Feedback is a gift.** For most people, it's difficult to tell you when things are going wrong—they'd rather be silent. If someone has gone out of their way, taken that risk, taken the time to observe what you're doing, and given you feedback, honor that.
+**Feedback is a gift.** For most people, it's difficult to tell you when things are going wrong. They'd rather be silent. If someone has gone out of their way, taken that risk, taken the time to observe what you're doing, and given you feedback, honor that.
 
 **Don't punish them for it.** Don't get angry or pissed or respond in a manner that punishes them for giving you that feedback. You want them to feel rewarded. You want them to feel like this was a good thing so that next time they can give you more feedback.
 
 ## Cast a Wide Net
 
-Try to get feedback from as many people as possible—you'll get a better sense through diversity. It's very easy to go to your friends and get nice positive feedback. After all, they're your friends; they're going to tell you nice things.
+Try to get feedback from as many people as possible. You'll get a better sense through diversity. It's very easy to go to your friends and get nice positive feedback. After all, they're your friends; they're going to tell you nice things.
 
-But you also want to talk to the person who's harsh—though not *only* the harsh people, because they might not see all of you.
+But you also want to talk to the person who's harsh (though not *only* the harsh people, because they might not see all of you).
 
 ### My Recommendation
 
@@ -81,4 +81,4 @@ If your company has a formal performance program, it becomes very easy for you t
 
 At this point, I'm exploring to see how feasible it is to possibly automate as much of this as possible. But I still think **having a conversation with someone is the best way to collect feedback.** 
 
-You see not just the words, but the facial expressions. Even if it's a call, you get to hear their voice, their intonation. You can follow up on pauses—what does it mean when you gave an extra pause while giving me this feedback? All of that matters.
+You see not just the words, but the facial expressions. Even if it's a call, you get to hear their voice, their intonation. You can follow up on pauses. What does it mean when you gave an extra pause while giving me this feedback? All of that matters.
