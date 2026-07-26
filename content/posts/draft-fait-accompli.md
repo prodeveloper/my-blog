@@ -4,11 +4,7 @@ date = 2026-07-28T08:00:00+01:00
 draft = true
 +++
 
-*This post was generated from a random section of "Technology Strategy Patterns" by Eben Hewitt, connected to current context.*
-
----
-
-There's a pattern in strategy work that I keep coming back to. It's called **Fait Accompli** — French for "an accomplished fact." The idea is simple: by the time you walk into the big meeting, the decision should already be made.
+There's a pattern in strategy work that I keep coming back to. It's called **Fait Accompli** (French for "an accomplished fact"). The idea is simple: by the time you walk into the big meeting, the decision should already be made.
 
 You don't get there by being the smartest person in the room. You get there by doing the work before the work.
 
@@ -18,7 +14,7 @@ Here's what happens when you don't prepare the room. You schedule a meeting. Peo
 
 And then it happens.
 
-Someone — usually the person with the most to lose or the most threatened by your proposal — launches a question. Not a bad-faith question, necessarily. But a tangential one. A rabbit hole. And suddenly the conversation is about something else entirely. People pile on. The meeting derails. Your proposal gets picked apart or, worse, politely ignored.
+Someone (usually the person with the most to lose or the most threatened by your proposal) launches a question. Not a bad-faith question, necessarily. But a tangential one. A rabbit hole. And suddenly the conversation is about something else entirely. People pile on. The meeting derails. Your proposal gets picked apart or, worse, politely ignored.
 
 You don't usually get a second shot.
 
@@ -32,7 +28,7 @@ You walk them through your thinking. You ask what they're not seeing. You ask wh
 
 Once they've said yes to you privately, they're extremely unlikely to reverse that publicly.
 
-When the big meeting comes, it's a formality. You reference their ideas. You credit their contributions. And the room becomes an echo chamber of support — because attacking your proposal means attacking the people in the room who already own pieces of it.
+When the big meeting comes, it's a formality. You reference their ideas. You credit their contributions. And the room becomes an echo chamber of support. Attacking your proposal means attacking the people in the room who already own pieces of it.
 
 ## Why This Matters Right Now
 
@@ -40,7 +36,7 @@ I'm in the middle of a major go-live at work. Multiple teams, multiple dependenc
 
 That's the wrong move.
 
-The right move is to spend the time upfront — before the governance meeting, before the CAB, before the steering committee — lining people up one by one. Not to manipulate them. To genuinely incorporate their perspective so the plan is stronger and they feel ownership of it.
+The right move is to spend the time upfront (before the governance meeting, before the CAB, before the steering committee) lining people up one by one. Not to manipulate them. To genuinely incorporate their perspective so the plan is stronger and they feel ownership of it.
 
 As Hewitt puts it: *"Strategy is the art of creating power. If you don't give them power, they will take yours."*
 
@@ -50,11 +46,11 @@ There's another pattern in the same chapter that pairs well with Fait Accompli. 
 
 Every good story follows the same arc:
 
-1. **Status quo** — This is where we are today. Shared understanding.
-2. **Inciting incident** — Something's wrong. The trend is bad. If we do nothing, we're in trouble.
-3. **The problem** — We can't stay here. We have to act.
-4. **The battle** — It's hard. The odds are against us. But there's a way.
-5. **Resolution** — Here's what we build. Here's the new normal.
+1. **Status quo.** This is where we are today. Shared understanding.
+2. **Inciting incident.** Something's wrong. The trend is bad. If we do nothing, we're in trouble.
+3. **The problem.** We can't stay here. We have to act.
+4. **The battle.** It's hard. The odds are against us. But there's a way.
+5. **Resolution.** Here's what we build. Here's the new normal.
 
 Your proposal deck should follow this structure. Not because it's clever, but because it works. It takes the audience on a journey. It makes them feel the tension before you offer the release.
 
@@ -68,4 +64,4 @@ Two things:
 
 2. **Tell a story.** Facts don't move people. Stories do. Structure your proposal like a narrative, and you'll carry the room with you.
 
-The best strategy in the world is worthless if you can't get buy-in. These two patterns — Fait Accompli and Dramatic Structure — are the tools that turn a good plan into a done deal.
+The best strategy in the world is worthless if you can't get buy-in. These two patterns (Fait Accompli and Dramatic Structure) are the tools that turn a good plan into a done deal.
