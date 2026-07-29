@@ -12,13 +12,13 @@ It's the Application Portfolio Management quadrant. Four boxes. Every applicatio
 
 Score each application on two axes: **business value** (how strategically important is it?) and **technical health** (how much debt, risk, or entropy has accumulated?). Plot them on a 2x2 grid, and you get four postures:
 
-**Grow / Evolve / Maintain.** High value, healthy tech. These are your stars. Keep investing, keep the team strong, don't let them atrophy through neglect. The risk here is complacency — assuming they'll stay healthy without deliberate attention.
+**1. Grow / Evolve / Maintain.** High value, healthy tech. These are your stars. Keep investing, keep the team strong, don't let them atrophy through neglect. The risk here is complacency — assuming they'll stay healthy without deliberate attention.
 
-**Tolerate.** Low value, healthy tech. They exist for a reason, but they're not your future. Staff them lean, minimize cost, and figure out a plan to consolidate or retire them eventually. The trap is letting them linger forever, quietly draining budget.
+**2. Tolerate.** Low value, healthy tech. They exist for a reason, but they're not your future. Staff them lean, minimize cost, and figure out a plan to consolidate or retire them eventually. The trap is letting them linger forever, quietly draining budget.
 
-**Retire.** Low value, high debt. These are the hardest conversations because there are always people attached to them. But the math is clear: the cost of keeping them exceeds their contribution. Kill them, consolidate any salvageable function, and move on.
+**3. Retire.** Low value, high debt. These are the hardest conversations because there are always people attached to them. But the math is clear: the cost of keeping them exceeds their contribution. Kill them, consolidate any salvageable function, and move on.
 
-**Reengineer / Modernize / Replace.** High value, high debt. These are the painful ones. They're critical to the business but have been mismanaged — short-term feature investment, no architectural care, a revolving door of leaders who kicked every can down the road. You can't ignore them because they matter. But fixing them is expensive, slow, and politically fraught.
+**4. Reengineer / Modernize / Replace.** High value, high debt. These are the painful ones. They're critical to the business but have been mismanaged — short-term feature investment, no architectural care, a revolving door of leaders who kicked every can down the road. You can't ignore them because they matter. But fixing them is expensive, slow, and politically fraught.
 
 ## Where This Bites
 
