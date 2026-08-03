@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>When Everything Goes Wrong: Leading Through a Critical System Recovery | ChenchaTech Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="As a software engineering manager, I&rsquo;ve faced my share of technical challenges, but nothing quite prepared me for the week when our core loyalty points administration system went completely dark.
+The Perfect Storm
+LPA The system that orchestrates this entire operation, let&rsquo;s call it our loyalty platform, had lost connectivity to essential services. We were looking at a potential customer impact that could affect our entire quarterly cycle.
+The technical details were complex: our replica server in the cloud couldn&rsquo;t communicate with the master server on-premises, authentication services were down, and network connectivity had been severed due to recent security changes. On top of all of this we are working with a strained organization just from hardening exercises.">
+<meta name="author" content="">
+<link rel="canonical" href="https://blog.chenchatech.com/posts/4_leading_through_crisis/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6ff46447b1fa3f8a5cc0bcae48088decc3ae37f5fbc99406a3aefc3bf0e6044a.css" integrity="sha256-b/RkR7H6P4pcwLyuSAiN7MOuN/X7yZQGo678O/DmBEo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.chenchatech.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.chenchatech.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.chenchatech.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.chenchatech.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.chenchatech.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://blog.chenchatech.com/posts/4_leading_through_crisis/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://blog.chenchatech.com/posts/4_leading_through_crisis/">
+  <meta property="og:site_name" content="ChenchaTech Blog">
+  <meta property="og:title" content="When Everything Goes Wrong: Leading Through a Critical System Recovery">
+  <meta property="og:description" content="As a software engineering manager, I’ve faced my share of technical challenges, but nothing quite prepared me for the week when our core loyalty points administration system went completely dark.
+The Perfect Storm LPA The system that orchestrates this entire operation, let’s call it our loyalty platform, had lost connectivity to essential services. We were looking at a potential customer impact that could affect our entire quarterly cycle.
+The technical details were complex: our replica server in the cloud couldn’t communicate with the master server on-premises, authentication services were down, and network connectivity had been severed due to recent security changes. On top of all of this we are working with a strained organization just from hardening exercises.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-08-22T12:52:57+01:00">
+    <meta property="article:modified_time" content="2025-08-22T12:52:57+01:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="When Everything Goes Wrong: Leading Through a Critical System Recovery">
+  <meta name="twitter:description" content="As a software engineering manager, I’ve faced my share of technical challenges, but nothing quite prepared me for the week when our core loyalty points administration system went completely dark.
+The Perfect Storm LPA The system that orchestrates this entire operation, let’s call it our loyalty platform, had lost connectivity to essential services. We were looking at a potential customer impact that could affect our entire quarterly cycle.
+The technical details were complex: our replica server in the cloud couldn’t communicate with the master server on-premises, authentication services were down, and network connectivity had been severed due to recent security changes. On top of all of this we are working with a strained organization just from hardening exercises.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.chenchatech.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "When Everything Goes Wrong: Leading Through a Critical System Recovery",
+      "item": "https://blog.chenchatech.com/posts/4_leading_through_crisis/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "When Everything Goes Wrong: Leading Through a Critical System Recovery",
+  "name": "When Everything Goes Wrong: Leading Through a Critical System Recovery",
+  "description": "As a software engineering manager, I\u0026rsquo;ve faced my share of technical challenges, but nothing quite prepared me for the week when our core loyalty points administration system went completely dark.\nThe Perfect Storm LPA The system that orchestrates this entire operation, let\u0026rsquo;s call it our loyalty platform, had lost connectivity to essential services. We were looking at a potential customer impact that could affect our entire quarterly cycle.\nThe technical details were complex: our replica server in the cloud couldn\u0026rsquo;t communicate with the master server on-premises, authentication services were down, and network connectivity had been severed due to recent security changes. On top of all of this we are working with a strained organization just from hardening exercises.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "As a software engineering manager, I’ve faced my share of technical challenges, but nothing quite prepared me for the week when our core loyalty points administration system went completely dark.\nThe Perfect Storm LPA The system that orchestrates this entire operation, let’s call it our loyalty platform, had lost connectivity to essential services. We were looking at a potential customer impact that could affect our entire quarterly cycle.\nThe technical details were complex: our replica server in the cloud couldn’t communicate with the master server on-premises, authentication services were down, and network connectivity had been severed due to recent security changes. On top of all of this we are working with a strained organization just from hardening exercises.\nThe Most Important Lesson: Aggressive Prioritization Saves the Day Here’s what I learned that I wish every engineering manager knew: When facing a true crisis, you must be ruthlessly aggressive about prioritization, even when it feels uncomfortable.\nThe moment we understood the severity of the situation, we made a decision that felt radical at the time. We completely paused all other work—including a high-visibility travel rewards project that had executive attention and redirected our entire engineering capacity to the recovery effort. Every network engineer, every infrastructure specialist, every architect within our portfolio was pulled into this single focus.\nThis wasn’t a popular decision initially. The engineer working on the travel project questioned whether this was really necessary. Other stakeholders wondered if we were overreacting. But I realized that half-measures in a crisis are often worse than no measures at all.\nThe Ripple Effect of Decisive Action What happened next validated this approach completely. Because we had everyone focused on the same problem:\nOur network team could immediately drop into emergency change processes (ECAB) Infrastructure specialists could work in parallel rather than sequence We could compress a typically week long design and approval process into hours Most importantly, everyone understood this was the top priority no competing demands The engineer initially expressed frustration about pausing other work, but once they understood the broader context and saw the entire organization mobilizing, they became one of our most effective contributors to the solution.\nTechnical and Organizational Alignment The technical solution required multiple teams to coordinate perfectly: network firewall rules needed updating, security protocols had to be fast-tracked, and infrastructure changes required emergency approvals. Without complete organizational alignment, this would have been impossible.\nWe scheduled back-to-back review sessions, compressed our design approval process, and even arranged emergency architecture reviews. The phrase “we need to get this over the line” became our rallying cry. Everyone from offshore teams to senior network architects understood that normal processes were temporarily suspended.\nThe Human Element One of the most striking aspects was watching how the team responded once they understood the stakes. The same engineer who initially questioned the priority shift became incredibly proactive, staying late to ensure network configurations were ready for morning reviews. Our offshore colleagues adjusted their schedules to support real-time collaboration.\nPeople rise to meet clear expectations, but only if leadership provides that clarity decisively.\nLessons for Engineering Managers Don’t hedge your bets in a real crisis. Go all-in or don’t go in at all. Half the team working on a critical issue while the other half continues normal work often means neither effort succeeds.\nCommunicate the ‘why’ relentlessly. People need to understand not just what you’re asking them to do, but why it matters more than everything else.\nCompress feedback loops. We moved from daily check-ins to twice-daily syncs, scheduled design reviews within hours instead of days, and created emergency approval processes.\nAccept that some people will initially resist. Not everyone will immediately understand why you’re making dramatic changes. That’s okay—clear communication and visible commitment from leadership eventually brings everyone along.\nUse the crisis to build trust. When your team sees you making hard decisions and taking ownership of outcomes, it strengthens your relationship for future challenges.\nThe Outcome We restored full service connectivity within 48 hours—a timeline that would normally take weeks through standard processes. More importantly, the team came out of this experience with increased confidence in our ability to handle crises and clearer understanding of how to mobilize when it truly matters.\nThe travel rewards project resumed once the crisis was resolved, and ironically, the focused sprint mentality we developed during the crisis made us more effective when we returned to normal work.\nFinal Thoughts Not every problem requires this level of response. But when you’re facing a true crisis that threatens core business operations, the biggest mistake is treating it like a normal problem with normal processes. Sometimes being a good engineering manager means making decisions that feel extreme in the moment but are exactly what the situation demands.\nThe key is knowing the difference between a crisis that requires this response and a problem that just feels urgent. But when you’re truly in crisis mode, decisive action and complete team alignment aren’t just helpful—they’re the only path forward.\n",
+  "wordCount" : "828",
+  "inLanguage": "en",
+  "datePublished": "2025-08-22T12:52:57+01:00",
+  "dateModified": "2025-08-22T12:52:57+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.chenchatech.com/posts/4_leading_through_crisis/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ChenchaTech Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.chenchatech.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://blog.chenchatech.com/" accesskey="h" title="ChenchaTech Blog (Alt + H)">ChenchaTech Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      When Everything Goes Wrong: Leading Through a Critical System Recovery
+    </h1>
+    <div class="post-meta">
+
+<span title='2025-08-22 12:52:57 +0100 BST'>August 22, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p>As a software engineering manager, I&rsquo;ve faced my share of technical challenges, but nothing quite prepared me for the week when our core loyalty points administration system went completely dark.</p>
+<h2 id="the-perfect-storm">The Perfect Storm<a hidden class="anchor" aria-hidden="true" href="#the-perfect-storm">#</a></h2>
+<p>LPA The system that orchestrates this entire operation, let&rsquo;s call it our loyalty platform, had lost connectivity to essential services. We were looking at a potential customer impact that could affect our entire quarterly cycle.</p>
+<p>The technical details were complex: our replica server in the cloud couldn&rsquo;t communicate with the master server on-premises, authentication services were down, and network connectivity had been severed due to recent security changes. On top of all of this we are working with a strained organization just from hardening exercises.</p>
+<h2 id="the-most-important-lesson-aggressive-prioritization-saves-the-day">The Most Important Lesson: Aggressive Prioritization Saves the Day<a hidden class="anchor" aria-hidden="true" href="#the-most-important-lesson-aggressive-prioritization-saves-the-day">#</a></h2>
+<p><img alt="leading through crisis" loading="lazy" src="https://storage.googleapis.com/blog-chenchatech-images/4_blog_leading_through_crisis.jpg"></p>
+<p>Here&rsquo;s what I learned that I wish every engineering manager knew: <strong>When facing a true crisis, you must be ruthlessly aggressive about prioritization, even when it feels uncomfortable.</strong></p>
+<p>The moment we understood the severity of the situation, we made a decision that felt radical at the time. We completely paused all other work—including a high-visibility travel rewards project that had executive attention and redirected our entire engineering capacity to the recovery effort. Every network engineer, every infrastructure specialist, every architect within our portfolio was pulled into this single focus.</p>
+<p>This wasn&rsquo;t a popular decision initially. The engineer working on the travel project questioned whether this was really necessary. Other stakeholders wondered if we were overreacting. But I realized that half-measures in a crisis are often worse than no measures at all.</p>
+<h2 id="the-ripple-effect-of-decisive-action">The Ripple Effect of Decisive Action<a hidden class="anchor" aria-hidden="true" href="#the-ripple-effect-of-decisive-action">#</a></h2>
+<p>What happened next validated this approach completely. Because we had everyone focused on the same problem:</p>
+<ul>
+<li>Our network team could immediately drop into emergency change processes (ECAB)</li>
+<li>Infrastructure specialists could work in parallel rather than sequence</li>
+<li>We could compress a typically week long design and approval process into hours</li>
+<li>Most importantly, everyone understood this was the top priority no competing demands</li>
+</ul>
+<p>The engineer initially expressed frustration about pausing other work, but once they understood the broader context and saw the entire organization mobilizing, they became one of our most effective contributors to the solution.</p>
+<h2 id="technical-and-organizational-alignment">Technical and Organizational Alignment<a hidden class="anchor" aria-hidden="true" href="#technical-and-organizational-alignment">#</a></h2>
+<p>The technical solution required multiple teams to coordinate perfectly: network firewall rules needed updating, security protocols had to be fast-tracked, and infrastructure changes required emergency approvals. Without complete organizational alignment, this would have been impossible.</p>
+<p>We scheduled back-to-back review sessions, compressed our design approval process, and even arranged emergency architecture reviews. The phrase &ldquo;we need to get this over the line&rdquo; became our rallying cry. Everyone from offshore teams to senior network architects understood that normal processes were temporarily suspended.</p>
+<h2 id="the-human-element">The Human Element<a hidden class="anchor" aria-hidden="true" href="#the-human-element">#</a></h2>
+<p>One of the most striking aspects was watching how the team responded once they understood the stakes. The same engineer who initially questioned the priority shift became incredibly proactive, staying late to ensure network configurations were ready for morning reviews. Our offshore colleagues adjusted their schedules to support real-time collaboration.</p>
+<p>People rise to meet clear expectations, but only if leadership provides that clarity decisively.</p>
+<h2 id="lessons-for-engineering-managers">Lessons for Engineering Managers<a hidden class="anchor" aria-hidden="true" href="#lessons-for-engineering-managers">#</a></h2>
+<ol>
+<li>
+<p><strong>Don&rsquo;t hedge your bets in a real crisis.</strong> Go all-in or don&rsquo;t go in at all. Half the team working on a critical issue while the other half continues normal work often means neither effort succeeds.</p>
+</li>
+<li>
+<p><strong>Communicate the &lsquo;why&rsquo; relentlessly.</strong> People need to understand not just what you&rsquo;re asking them to do, but why it matters more than everything else.</p>
+</li>
+<li>
+<p><strong>Compress feedback loops.</strong> We moved from daily check-ins to twice-daily syncs, scheduled design reviews within hours instead of days, and created emergency approval processes.</p>
+</li>
+<li>
+<p><strong>Accept that some people will initially resist.</strong> Not everyone will immediately understand why you&rsquo;re making dramatic changes. That&rsquo;s okay—clear communication and visible commitment from leadership eventually brings everyone along.</p>
+</li>
+<li>
+<p><strong>Use the crisis to build trust.</strong> When your team sees you making hard decisions and taking ownership of outcomes, it strengthens your relationship for future challenges.</p>
+</li>
+</ol>
+<h2 id="the-outcome">The Outcome<a hidden class="anchor" aria-hidden="true" href="#the-outcome">#</a></h2>
+<p>We restored full service connectivity within 48 hours—a timeline that would normally take weeks through standard processes. More importantly, the team came out of this experience with increased confidence in our ability to handle crises and clearer understanding of how to mobilize when it truly matters.</p>
+<p>The travel rewards project resumed once the crisis was resolved, and ironically, the focused sprint mentality we developed during the crisis made us more effective when we returned to normal work.</p>
+<h2 id="final-thoughts">Final Thoughts<a hidden class="anchor" aria-hidden="true" href="#final-thoughts">#</a></h2>
+<p>Not every problem requires this level of response. But when you&rsquo;re facing a true crisis that threatens core business operations, the biggest mistake is treating it like a normal problem with normal processes. Sometimes being a good engineering manager means making decisions that feel extreme in the moment but are exactly what the situation demands.</p>
+<p>The key is knowing the difference between a crisis that requires this response and a problem that just feels urgent. But when you&rsquo;re truly in crisis mode, decisive action and complete team alignment aren&rsquo;t just helpful—they&rsquo;re the only path forward.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://blog.chenchatech.com/">ChenchaTech Blog</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

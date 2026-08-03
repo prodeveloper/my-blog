@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>When Network Says no | ChenchaTech Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="I recently found myself in a troubleshooting session that taught me an important lesson about assumptions we make in our development workflows. What started as a simple &ldquo;why won&rsquo;t this application start?&rdquo; quickly became a deeper conversation about how we approach dependency management in enterprise environments.
+The Problem Unfolds
+One of our engineers was struggling with a Spring Boot application that wouldn&rsquo;t start on an Azure VM. The error was frustratingly vague - just a &ldquo;connection reset&rdquo; message that gave us little to work with initially. But as we dug deeper, the real issue became clear.">
+<meta name="author" content="">
+<link rel="canonical" href="https://blog.chenchatech.com/posts/2_when_network_says_no/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6ff46447b1fa3f8a5cc0bcae48088decc3ae37f5fbc99406a3aefc3bf0e6044a.css" integrity="sha256-b/RkR7H6P4pcwLyuSAiN7MOuN/X7yZQGo678O/DmBEo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.chenchatech.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.chenchatech.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.chenchatech.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.chenchatech.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.chenchatech.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://blog.chenchatech.com/posts/2_when_network_says_no/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://blog.chenchatech.com/posts/2_when_network_says_no/">
+  <meta property="og:site_name" content="ChenchaTech Blog">
+  <meta property="og:title" content="When Network Says no">
+  <meta property="og:description" content="I recently found myself in a troubleshooting session that taught me an important lesson about assumptions we make in our development workflows. What started as a simple “why won’t this application start?” quickly became a deeper conversation about how we approach dependency management in enterprise environments.
+The Problem Unfolds One of our engineers was struggling with a Spring Boot application that wouldn’t start on an Azure VM. The error was frustratingly vague - just a “connection reset” message that gave us little to work with initially. But as we dug deeper, the real issue became clear.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-08-21T13:27:52+01:00">
+    <meta property="article:modified_time" content="2025-08-21T13:27:52+01:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="When Network Says no">
+  <meta name="twitter:description" content="I recently found myself in a troubleshooting session that taught me an important lesson about assumptions we make in our development workflows. What started as a simple “why won’t this application start?” quickly became a deeper conversation about how we approach dependency management in enterprise environments.
+The Problem Unfolds One of our engineers was struggling with a Spring Boot application that wouldn’t start on an Azure VM. The error was frustratingly vague - just a “connection reset” message that gave us little to work with initially. But as we dug deeper, the real issue became clear.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.chenchatech.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "When Network Says no",
+      "item": "https://blog.chenchatech.com/posts/2_when_network_says_no/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "When Network Says no",
+  "name": "When Network Says no",
+  "description": "I recently found myself in a troubleshooting session that taught me an important lesson about assumptions we make in our development workflows. What started as a simple \u0026ldquo;why won\u0026rsquo;t this application start?\u0026rdquo; quickly became a deeper conversation about how we approach dependency management in enterprise environments.\nThe Problem Unfolds One of our engineers was struggling with a Spring Boot application that wouldn\u0026rsquo;t start on an Azure VM. The error was frustratingly vague - just a \u0026ldquo;connection reset\u0026rdquo; message that gave us little to work with initially. But as we dug deeper, the real issue became clear.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "I recently found myself in a troubleshooting session that taught me an important lesson about assumptions we make in our development workflows. What started as a simple “why won’t this application start?” quickly became a deeper conversation about how we approach dependency management in enterprise environments.\nThe Problem Unfolds One of our engineers was struggling with a Spring Boot application that wouldn’t start on an Azure VM. The error was frustratingly vague - just a “connection reset” message that gave us little to work with initially. But as we dug deeper, the real issue became clear.\n“I think it’s like a blocker for Internet,” the engineer explained, pointing to the build logs. “All these libraries - Spring Framework, Spring Boot, Java-related dependencies - everything needs to download to our local machine before it can start working.”\nThe application was trying to pull dependencies at runtime, but our Azure VM was sitting within a hardened subscription with restricted internet access. Only whitelisted URLs could be reached, and we didn’t have access to the Maven repositories and dependency sources our application needed.\nThe Lightbulb Moment This is where the real learning happened. My initial instinct was to think about network exceptions and whitelisting - the typical “ask IT to open up access” approach. But as we talked through the problem, a different solution emerged.\n“What if we built this locally first?” I found myself asking. “Once we have all the dependencies pulled and we have something like a JAR file, then it stops being a problem, right?”\nThe engineer paused. “We haven’t tried that approach before. We never had this kind of access issue.”\nAnd there it was - the assumption we’d been making without realizing it. We’d been designing our deployment process assuming internet access would always be available at runtime. We’d never questioned whether that was the best approach.\nRethinking Our Build Strategy This conversation shifted my thinking about how we approach builds and deployments, especially in enterprise environments. Here are the key insights:\nRuntime dependency resolution is a luxury, not a requirement. Many of us have gotten comfortable with build tools that fetch dependencies on-demand. It’s convenient during development, but it creates a hidden dependency on network access that may not always be available.\nPre-built artifacts are more portable. When you build everything locally (or in a build environment with internet access) and create a single deployable artifact, you eliminate the network dependency entirely. Your JAR file contains everything it needs to run.\nInfrastructure constraints drive better architectural decisions. What initially felt like a frustrating limitation actually pushed us toward a more robust deployment strategy. Self-contained artifacts are generally more reliable and predictable than builds that depend on external resources at runtime.\nThe Broader Lesson This experience reminded me that as engineering managers, we need to regularly examine our assumptions about the environments our applications will run in. Network access, package repositories, even basic internet connectivity - these aren’t guaranteed in every deployment scenario.\nThe solution wasn’t to fight the infrastructure constraints or spend weeks getting security exceptions. It was to adapt our build process to work within those constraints. Sometimes the “limitation” points us toward a better approach we hadn’t considered.\nMoving Forward We’re now implementing a build strategy that creates fully self-contained artifacts before deployment. It’s actually made our deployment process more predictable and faster - no more waiting for dependency downloads during startup.\nThe next time you encounter what feels like an infrastructure roadblock, ask yourself: “What if this constraint is actually pushing us toward a better solution?” Sometimes the network saying “no” is exactly what you need to hear.\n",
+  "wordCount" : "604",
+  "inLanguage": "en",
+  "datePublished": "2025-08-21T13:27:52+01:00",
+  "dateModified": "2025-08-21T13:27:52+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.chenchatech.com/posts/2_when_network_says_no/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ChenchaTech Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.chenchatech.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://blog.chenchatech.com/" accesskey="h" title="ChenchaTech Blog (Alt + H)">ChenchaTech Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      When Network Says no
+    </h1>
+    <div class="post-meta">
+
+<span title='2025-08-21 13:27:52 +0100 BST'>August 21, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p>I recently found myself in a troubleshooting session that taught me an important lesson about assumptions we make in our development workflows. What started as a simple &ldquo;why won&rsquo;t this application start?&rdquo; quickly became a deeper conversation about how we approach dependency management in enterprise environments.</p>
+<h2 id="the-problem-unfolds">The Problem Unfolds<a hidden class="anchor" aria-hidden="true" href="#the-problem-unfolds">#</a></h2>
+<p>One of our engineers was struggling with a Spring Boot application that wouldn&rsquo;t start on an Azure VM. The error was frustratingly vague - just a &ldquo;connection reset&rdquo; message that gave us little to work with initially. But as we dug deeper, the real issue became clear.</p>
+<p>&ldquo;I think it&rsquo;s like a blocker for Internet,&rdquo; the engineer explained, pointing to the build logs. &ldquo;All these libraries - Spring Framework, Spring Boot, Java-related dependencies - everything needs to download to our local machine before it can start working.&rdquo;</p>
+<p>The application was trying to pull dependencies at runtime, but our Azure VM was sitting within a hardened subscription with restricted internet access. Only whitelisted URLs could be reached, and we didn&rsquo;t have access to the Maven repositories and dependency sources our application needed.</p>
+<p><img alt="alt text" loading="lazy" src="https://storage.googleapis.com/blog-chenchatech-images/2_failed_connection.jpg"></p>
+<h2 id="the-lightbulb-moment">The Lightbulb Moment<a hidden class="anchor" aria-hidden="true" href="#the-lightbulb-moment">#</a></h2>
+<p>This is where the real learning happened. My initial instinct was to think about network exceptions and whitelisting - the typical &ldquo;ask IT to open up access&rdquo; approach. But as we talked through the problem, a different solution emerged.</p>
+<p>&ldquo;What if we built this locally first?&rdquo; I found myself asking. &ldquo;Once we have all the dependencies pulled and we have something like a JAR file, then it stops being a problem, right?&rdquo;</p>
+<p>The engineer paused. &ldquo;We haven&rsquo;t tried that approach before. We never had this kind of access issue.&rdquo;</p>
+<p>And there it was - the assumption we&rsquo;d been making without realizing it. We&rsquo;d been designing our deployment process assuming internet access would always be available at runtime. We&rsquo;d never questioned whether that was the best approach.</p>
+<h2 id="rethinking-our-build-strategy">Rethinking Our Build Strategy<a hidden class="anchor" aria-hidden="true" href="#rethinking-our-build-strategy">#</a></h2>
+<p>This conversation shifted my thinking about how we approach builds and deployments, especially in enterprise environments. Here are the key insights:</p>
+<p><strong>Runtime dependency resolution is a luxury, not a requirement.</strong> Many of us have gotten comfortable with build tools that fetch dependencies on-demand. It&rsquo;s convenient during development, but it creates a hidden dependency on network access that may not always be available.</p>
+<p><strong>Pre-built artifacts are more portable.</strong> When you build everything locally (or in a build environment with internet access) and create a single deployable artifact, you eliminate the network dependency entirely. Your JAR file contains everything it needs to run.</p>
+<p><strong>Infrastructure constraints drive better architectural decisions.</strong> What initially felt like a frustrating limitation actually pushed us toward a more robust deployment strategy. Self-contained artifacts are generally more reliable and predictable than builds that depend on external resources at runtime.</p>
+<h2 id="the-broader-lesson">The Broader Lesson<a hidden class="anchor" aria-hidden="true" href="#the-broader-lesson">#</a></h2>
+<p>This experience reminded me that as engineering managers, we need to regularly examine our assumptions about the environments our applications will run in. Network access, package repositories, even basic internet connectivity - these aren&rsquo;t guaranteed in every deployment scenario.</p>
+<p>The solution wasn&rsquo;t to fight the infrastructure constraints or spend weeks getting security exceptions. It was to adapt our build process to work within those constraints. Sometimes the &ldquo;limitation&rdquo; points us toward a better approach we hadn&rsquo;t considered.</p>
+<h2 id="moving-forward">Moving Forward<a hidden class="anchor" aria-hidden="true" href="#moving-forward">#</a></h2>
+<p>We&rsquo;re now implementing a build strategy that creates fully self-contained artifacts before deployment. It&rsquo;s actually made our deployment process more predictable and faster - no more waiting for dependency downloads during startup.</p>
+<p>The next time you encounter what feels like an infrastructure roadblock, ask yourself: &ldquo;What if this constraint is actually pushing us toward a better solution?&rdquo; Sometimes the network saying &ldquo;no&rdquo; is exactly what you need to hear.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://blog.chenchatech.com/">ChenchaTech Blog</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

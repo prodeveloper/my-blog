@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>I Just Wanted to Check My Gmail from the Terminal | ChenchaTech Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="It started with a simple idea: use Claude to check my Gmail without opening a browser.
+I found a CLI tool called gws, the Google Workspace CLI. It promised to let you query Drive, Gmail, Calendar, Sheets, all from the terminal. Perfect. I installed it, set up OAuth credentials in Google Cloud Console, and ran gws auth login.
+And immediately hit a wall.
+
+The first error: invalid_client
+OAuth flow failed: Server error: invalid_client: Unauthorized
+invalid_client is Google&rsquo;s way of saying: I don&rsquo;t recognise these credentials at all. Not a permissions issue. Not a scope issue. The credentials themselves were wrong.">
+<meta name="author" content="">
+<link rel="canonical" href="https://blog.chenchatech.com/posts/21_battle_with_gws/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6ff46447b1fa3f8a5cc0bcae48088decc3ae37f5fbc99406a3aefc3bf0e6044a.css" integrity="sha256-b/RkR7H6P4pcwLyuSAiN7MOuN/X7yZQGo678O/DmBEo=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.chenchatech.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.chenchatech.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.chenchatech.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.chenchatech.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.chenchatech.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://blog.chenchatech.com/posts/21_battle_with_gws/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://blog.chenchatech.com/posts/21_battle_with_gws/">
+  <meta property="og:site_name" content="ChenchaTech Blog">
+  <meta property="og:title" content="I Just Wanted to Check My Gmail from the Terminal">
+  <meta property="og:description" content="It started with a simple idea: use Claude to check my Gmail without opening a browser.
+I found a CLI tool called gws, the Google Workspace CLI. It promised to let you query Drive, Gmail, Calendar, Sheets, all from the terminal. Perfect. I installed it, set up OAuth credentials in Google Cloud Console, and ran gws auth login.
+And immediately hit a wall.
+The first error: invalid_client OAuth flow failed: Server error: invalid_client: Unauthorized invalid_client is Google’s way of saying: I don’t recognise these credentials at all. Not a permissions issue. Not a scope issue. The credentials themselves were wrong.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-10T17:52:03+00:00">
+    <meta property="article:modified_time" content="2026-03-10T17:52:03+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="I Just Wanted to Check My Gmail from the Terminal">
+  <meta name="twitter:description" content="It started with a simple idea: use Claude to check my Gmail without opening a browser.
+I found a CLI tool called gws, the Google Workspace CLI. It promised to let you query Drive, Gmail, Calendar, Sheets, all from the terminal. Perfect. I installed it, set up OAuth credentials in Google Cloud Console, and ran gws auth login.
+And immediately hit a wall.
+The first error: invalid_client OAuth flow failed: Server error: invalid_client: Unauthorized invalid_client is Google’s way of saying: I don’t recognise these credentials at all. Not a permissions issue. Not a scope issue. The credentials themselves were wrong.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.chenchatech.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "I Just Wanted to Check My Gmail from the Terminal",
+      "item": "https://blog.chenchatech.com/posts/21_battle_with_gws/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "I Just Wanted to Check My Gmail from the Terminal",
+  "name": "I Just Wanted to Check My Gmail from the Terminal",
+  "description": "It started with a simple idea: use Claude to check my Gmail without opening a browser.\nI found a CLI tool called gws, the Google Workspace CLI. It promised to let you query Drive, Gmail, Calendar, Sheets, all from the terminal. Perfect. I installed it, set up OAuth credentials in Google Cloud Console, and ran gws auth login.\nAnd immediately hit a wall.\nThe first error: invalid_client OAuth flow failed: Server error: invalid_client: Unauthorized invalid_client is Google\u0026rsquo;s way of saying: I don\u0026rsquo;t recognise these credentials at all. Not a permissions issue. Not a scope issue. The credentials themselves were wrong.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "It started with a simple idea: use Claude to check my Gmail without opening a browser.\nI found a CLI tool called gws, the Google Workspace CLI. It promised to let you query Drive, Gmail, Calendar, Sheets, all from the terminal. Perfect. I installed it, set up OAuth credentials in Google Cloud Console, and ran gws auth login.\nAnd immediately hit a wall.\nThe first error: invalid_client OAuth flow failed: Server error: invalid_client: Unauthorized invalid_client is Google’s way of saying: I don’t recognise these credentials at all. Not a permissions issue. Not a scope issue. The credentials themselves were wrong.\nI had a client_secret.json file in the right place. I checked the client ID. Correct. I checked the secret. Also correct, I thought.\nTurns out gws stores its own copy of your credentials at ~/.config/gws/client_secret.json. And somewhere along the way, that file had the client ID pasted into the client_secret field. Both fields had the same value. The same long string. Completely wrong.\nOne file copy later, the login succeeded.\nThe second error: a machine that doesn’t exist Authentication failed: Failed to decrypt credentials: Decryption failed. Credentials may have been created on a different machine. I had just logged in. On this machine. Thirty seconds ago.\nWhat was happening: gws encrypts your OAuth token after login using your OS Keyring (macOS Keychain on a Mac). When Claude runs a terminal command in a subprocess, it has no access to the Keychain. So every time Claude called gws, it tried to generate a new decryption key from scratch, failed, and gave up.\nThe login worked fine in my interactive terminal. Every command Claude ran in the background failed.\nI tried a lot of things:\ngws auth logout and back in again. Same error. A separate profile directory via GOOGLE_WORKSPACE_CLI_CONFIG_DIR. Same error. Creating a .encryption_key file before login so gws would use that instead. The file disappeared after login. Extracting the key from the macOS Keychain via security find-generic-password. The key wasn’t there. I even read the strings out of the compiled binary to understand what encryption library it was using. (keyring-rs v3, for the curious.)\nNothing worked.\nThe fix: bypass the encryption entirely gws has two credential modes: encrypted (credentials.enc) and plain (credentials.json). If the plain file exists, it uses that, with no Keychain needed.\nSo I wrote a small Python script to do the OAuth flow myself and save the token directly to ~/.config/gws/credentials.json in the right format. No gws involved in the auth step at all.\nIt hit one more snag. macOS Python 3.13 doesn’t ship with SSL certificates by default, so the token exchange request failed. Fixed by pointing it at the Homebrew OpenSSL cert bundle.\nThen I deleted credentials.enc so gws would stop trying to decrypt it.\nAnd it worked.\nThe result gws gmail users messages list \\ --params '{\"userId\": \"me\", \"q\": \"invoice newer_than:7d\"}' Six emails. All there, all readable, straight from the terminal.\nTotal time: about two hours. For what should have been a five-minute setup.\nWhat I took away The Keychain is an interactive-only resource. Any tool that encrypts credentials using the OS Keyring will fail silently in non-interactive contexts. Background jobs, subprocesses, CI pipelines. If you’re building something that needs to run unattended, use file-based secrets.\n“Created on a different machine” usually means “no Keychain access.” The error message implies your token is stale. It isn’t. The decryption key just isn’t available in that context.\nRead the binary if you have to. When the docs don’t explain the encryption mechanism, strings on the compiled binary at least tells you what library is being used and what Keychain service name to search for.\nPlain credentials beat encrypted ones when automation is involved. The extra security of Keychain encryption isn’t worth much if it breaks every automated workflow. Know how to opt out.\nI did eventually check my email. The thing I was looking for was there.\nTwo hours for that. But now it works from anywhere.\nThis isn’t the final answer though. Plain credentials are a workaround, not a fix. The encrypted flow is what gws is designed for, and it’s clearly working. The login succeeds, the token is saved. Something in the Keychain handshake is just not translating across contexts. That’s the next thing to figure out: why the key isn’t where gws expects it, and whether there’s a way to make the encrypted path work for subprocesses too.\nWhen that’s solved, I’ll update this post.\n",
+  "wordCount" : "742",
+  "inLanguage": "en",
+  "datePublished": "2026-03-10T17:52:03Z",
+  "dateModified": "2026-03-10T17:52:03Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.chenchatech.com/posts/21_battle_with_gws/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ChenchaTech Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.chenchatech.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://blog.chenchatech.com/" accesskey="h" title="ChenchaTech Blog (Alt + H)">ChenchaTech Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      I Just Wanted to Check My Gmail from the Terminal
+    </h1>
+    <div class="post-meta">
+
+<span title='2026-03-10 17:52:03 +0000 UTC'>March 10, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p>It started with a simple idea: use Claude to check my Gmail without opening a browser.</p>
+<p>I found a CLI tool called <code>gws</code>, the Google Workspace CLI. It promised to let you query Drive, Gmail, Calendar, Sheets, all from the terminal. Perfect. I installed it, set up OAuth credentials in Google Cloud Console, and ran <code>gws auth login</code>.</p>
+<p>And immediately hit a wall.</p>
+<hr>
+<h2 id="the-first-error-invalid_client">The first error: invalid_client<a hidden class="anchor" aria-hidden="true" href="#the-first-error-invalid_client">#</a></h2>
+<pre tabindex="0"><code>OAuth flow failed: Server error: invalid_client: Unauthorized
+</code></pre><p><code>invalid_client</code> is Google&rsquo;s way of saying: I don&rsquo;t recognise these credentials at all. Not a permissions issue. Not a scope issue. The credentials themselves were wrong.</p>
+<p>I had a <code>client_secret.json</code> file in the right place. I checked the client ID. Correct. I checked the secret. Also correct, I thought.</p>
+<p>Turns out <code>gws</code> stores its own copy of your credentials at <code>~/.config/gws/client_secret.json</code>. And somewhere along the way, that file had the client ID pasted into the <code>client_secret</code> field. Both fields had the same value. The same long string. Completely wrong.</p>
+<p>One file copy later, the login succeeded.</p>
+<hr>
+<h2 id="the-second-error-a-machine-that-doesnt-exist">The second error: a machine that doesn&rsquo;t exist<a hidden class="anchor" aria-hidden="true" href="#the-second-error-a-machine-that-doesnt-exist">#</a></h2>
+<pre tabindex="0"><code>Authentication failed: Failed to decrypt credentials: Decryption failed.
+Credentials may have been created on a different machine.
+</code></pre><p>I had just logged in. On this machine. Thirty seconds ago.</p>
+<p>What was happening: <code>gws</code> encrypts your OAuth token after login using your OS Keyring (macOS Keychain on a Mac). When Claude runs a terminal command in a subprocess, it has no access to the Keychain. So every time Claude called <code>gws</code>, it tried to generate a new decryption key from scratch, failed, and gave up.</p>
+<p>The login worked fine in my interactive terminal. Every command Claude ran in the background failed.</p>
+<p>I tried a lot of things:</p>
+<ul>
+<li><code>gws auth logout</code> and back in again. Same error.</li>
+<li>A separate profile directory via <code>GOOGLE_WORKSPACE_CLI_CONFIG_DIR</code>. Same error.</li>
+<li>Creating a <code>.encryption_key</code> file before login so <code>gws</code> would use that instead. The file disappeared after login.</li>
+<li>Extracting the key from the macOS Keychain via <code>security find-generic-password</code>. The key wasn&rsquo;t there.</li>
+</ul>
+<p>I even read the strings out of the compiled binary to understand what encryption library it was using. (<code>keyring-rs</code> v3, for the curious.)</p>
+<p>Nothing worked.</p>
+<hr>
+<h2 id="the-fix-bypass-the-encryption-entirely">The fix: bypass the encryption entirely<a hidden class="anchor" aria-hidden="true" href="#the-fix-bypass-the-encryption-entirely">#</a></h2>
+<p><code>gws</code> has two credential modes: encrypted (<code>credentials.enc</code>) and plain (<code>credentials.json</code>). If the plain file exists, it uses that, with no Keychain needed.</p>
+<p>So I wrote a small Python script to do the OAuth flow myself and save the token directly to <code>~/.config/gws/credentials.json</code> in the right format. No <code>gws</code> involved in the auth step at all.</p>
+<p>It hit one more snag. macOS Python 3.13 doesn&rsquo;t ship with SSL certificates by default, so the token exchange request failed. Fixed by pointing it at the Homebrew OpenSSL cert bundle.</p>
+<p>Then I deleted <code>credentials.enc</code> so <code>gws</code> would stop trying to decrypt it.</p>
+<p>And it worked.</p>
+<hr>
+<h2 id="the-result">The result<a hidden class="anchor" aria-hidden="true" href="#the-result">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gws gmail users messages list <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --params <span style="color:#e6db74">&#39;{&#34;userId&#34;: &#34;me&#34;, &#34;q&#34;: &#34;invoice newer_than:7d&#34;}&#39;</span>
+</span></span></code></pre></div><p>Six emails. All there, all readable, straight from the terminal.</p>
+<p>Total time: about two hours. For what should have been a five-minute setup.</p>
+<hr>
+<h2 id="what-i-took-away">What I took away<a hidden class="anchor" aria-hidden="true" href="#what-i-took-away">#</a></h2>
+<p><strong>The Keychain is an interactive-only resource.</strong> Any tool that encrypts credentials using the OS Keyring will fail silently in non-interactive contexts. Background jobs, subprocesses, CI pipelines. If you&rsquo;re building something that needs to run unattended, use file-based secrets.</p>
+<p><strong>&ldquo;Created on a different machine&rdquo; usually means &ldquo;no Keychain access.&rdquo;</strong> The error message implies your token is stale. It isn&rsquo;t. The decryption key just isn&rsquo;t available in that context.</p>
+<p><strong>Read the binary if you have to.</strong> When the docs don&rsquo;t explain the encryption mechanism, <code>strings</code> on the compiled binary at least tells you what library is being used and what Keychain service name to search for.</p>
+<p><strong>Plain credentials beat encrypted ones when automation is involved.</strong> The extra security of Keychain encryption isn&rsquo;t worth much if it breaks every automated workflow. Know how to opt out.</p>
+<p>I did eventually check my email. The thing I was looking for was there.</p>
+<p>Two hours for that. But now it works from anywhere.</p>
+<p>This isn&rsquo;t the final answer though. Plain credentials are a workaround, not a fix. The encrypted flow is what <code>gws</code> is designed for, and it&rsquo;s clearly working. The login succeeds, the token is saved. Something in the Keychain handshake is just not translating across contexts. That&rsquo;s the next thing to figure out: why the key isn&rsquo;t where <code>gws</code> expects it, and whether there&rsquo;s a way to make the encrypted path work for subprocesses too.</p>
+<p>When that&rsquo;s solved, I&rsquo;ll update this post.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://blog.chenchatech.com/">ChenchaTech Blog</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
