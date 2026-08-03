@@ -13,7 +13,7 @@ Let me explain this idea across three major realms of life.
 
 ## Software Development
 
-First, let's talk about this from a software development perspective—which is mostly charity work, if we're being honest.
+First, let's talk about this from a software development perspective (which is mostly charity work, if we're being honest).
 
 When you're building any tool, you need to ask yourself: **How do I make time my friend?** This question should guide every decision.
 
@@ -21,7 +21,7 @@ When you're building any tool, you need to ask yourself: **How do I make time my
 
 Think about the contrast between *right now* and *six months from now*. When you're writing software, everything is crystal clear. Your intention is right there. You have the whole map of the problem in your head, and you can easily navigate this multidimensional solution space.
 
-However, with time, you start losing a lot of that context. Or even worse—another engineer takes over your project.
+However, with time, you start losing a lot of that context. Or even worse: another engineer takes over your project.
 
 **If you haven't thought about this situation, what's going to happen?** You (or they) will try to modify something without understanding how it works or why it works.
 
@@ -34,7 +34,7 @@ Ask yourself:
 - Can you log things effectively?
 - Is your code explicit?
 
-All of these ideas make it much easier for future you—or for the maintainability of the project. I believe so much in this that I think it trumps any kind of speed or performance requirements.
+All of these ideas make it much easier for future you (and for the maintainability of the project). I believe so much in this that I think it trumps any kind of speed or performance requirements.
 
 ## Financial Wisdom
 
@@ -44,15 +44,15 @@ The second part is the financial sense. Let me illustrate with a concept I call 
 
 When you spend money today, *when was that money earned?*
 
-Let's use a neutral example. Say you get paid on the 5th of the month and you pay your rent on the 5th. You can call that **zero-day aging**—a neutral expense where the money went in and out on the same day.
+Let's use a neutral example. Say you get paid on the 5th of the month and you pay your rent on the 5th. You can call that **zero-day aging**: a neutral expense where the money went in and out on the same day.
 
 Now consider different scenarios:
 
 **Positive aging:**
-- You get paid on the 5th but pay rent on the 10th—that's 5-day-old money
-- You're paying January's rent with December's income—excellent
-- You're paying all expenses with last year's income—even better
-- You're paying everything from investment returns—**you've achieved financial independence**
+- You get paid on the 5th but pay rent on the 10th. That's 5-day-old money.
+- You're paying January's rent with December's income. Excellent.
+- You're paying all expenses with last year's income. Even better.
+- You're paying everything from investment returns. **You've achieved financial independence.**
 
 **Negative aging (the debt spiral):**
 - You have an expense today but don't have the money
@@ -60,15 +60,15 @@ Now consider different scenarios:
 - You pay for that expense in the coming month
 - All of your current income is paying for expenses that happened long ago
 
-This is a really poor situation—what we call a **debt spiral**.
+This is a really poor situation, what we call a **debt spiral**.
 
 ### The Simple Solution
 
 Avoiding this is fairly simple: always keep this idea in mind. Whenever possible, **push some money to the future**.
 
 Again, simplicity wins. You don't need to be smart about this. Follow well-tested, obvious ideas that are friends of time. For example:
-- **Pay yourself first**—very simple, very little friction, very easy to automate
-- **Index funds**—if you invest in a professional, well-diversified business, you're probably not going to get amazing returns, but you'll get good returns. And that's what matters.
+- **Pay yourself first.** Very simple, very little friction, very easy to automate.
+- **Index funds.** If you invest in a professional, well-diversified business, you're probably not going to get amazing returns, but you'll get good returns. And that's what matters.
 
 ## Personal Health and Relationships
 
@@ -78,9 +78,9 @@ The last realm is personal philosophy and development.
 
 Think about how things are going to be. How will you age? Because you are *guaranteed* to age. **How are you making that simpler for yourself?**
 
-I've realized, for example, that I've always been drawn to extremes. But I don't think an extreme exercise regime is good for you—that just leads to joint pains and injuries later in life.
+I've realized, for example, that I've always been drawn to extremes. But I don't think an extreme exercise regime is good for you. That just leads to joint pains and injuries later in life.
 
-What works? **Basic aesthetics**—finishing one hour of exercise pretty much every day. That's it. Simple enough.
+What works? **Basic aesthetics.** Finishing one hour of exercise pretty much every day. That's it. Simple enough.
 
 ### The Obvious Stuff
 
@@ -106,7 +106,7 @@ If you're lucky, some of your greatest friends are people you previously worked 
 
 Here's an interesting idea I came across that I really like: **If someone crosses your mind, just ping them.** Say, "Hey, you crossed my mind. How are you doing?"
 
-I particularly like this because it's so authentic. You don't need a tracker or a calendar reminder. Someone crossed your mind—just check in on them. This little heartbeat means when you do eventually get together, there's something to discuss. You know quite a bit about their life.
+I particularly like this because it's so authentic. You don't need a tracker or a calendar reminder. Someone crossed your mind. Just check in on them. This little heartbeat means when you do eventually get together, there's something to discuss. You know quite a bit about their life.
 
 ---
 
