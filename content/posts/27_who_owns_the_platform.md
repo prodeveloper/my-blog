@@ -4,6 +4,8 @@ date = 2026-08-04T09:00:00Z
 draft = true
 +++
 
+![A layered platform stack](/images/27-orchestration-layers.png)
+
 I've been spending a lot of time lately building internal platforms. The nkosi dashboard, the action scan pipeline, the compliance automation layer. These are the kind of tools that make everything else possible but don't always get the attention they deserve.
 
 And I keep running into the same question: **who actually owns this thing?**

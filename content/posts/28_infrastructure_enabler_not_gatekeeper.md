@@ -4,6 +4,8 @@ date = 2026-08-06T09:00:00+01:00
 draft = true
 +++
 
+![Infrastructure hardware](/images/28-infrastructure.jpeg)
+
 I've been reading Eben Hewitt's *Technology Strategy Patterns*, and one passage stopped me cold. It's about infrastructure teams and the trap they fall into.
 
 Hewitt describes two mentalities for infrastructure teams. The **enabler** provides quick, reliable support to the teams building customer-facing products. The **gatekeeper** uses standardization as a weapon, a way to keep the business units in line.

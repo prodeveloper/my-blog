@@ -4,6 +4,8 @@ date = 2026-07-30T09:00:00Z
 draft = true
 +++
 
+![Executives in a boardroom](/images/26-slt-bosses-executives.jpg)
+
 I've been reading Eben Hewitt's *Technology Strategy Patterns*, and one idea keeps rattling around my head: the **Ghost Deck**.
 
 The premise is simple. Before you write a single slide body, before you make a chart or pull a data point, you write every headline. Every slide gets a bold, audacious claim as its title. Then you review the headlines as a sequence. If someone could follow your entire argument just by reading the headlines, you're done with the structure. Only then do you go back and fill in the evidence.

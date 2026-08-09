@@ -4,6 +4,8 @@ date = 2026-07-28T09:00:00+01:00
 draft = true
 +++
 
+![A portfolio of applications](/images/25-data-sources.png)
+
 I've been reading Eben Hewitt's *Technology Strategy Patterns*, and one framework jumped out at me because it maps so cleanly onto the decisions I make every week.
 
 It's the Application Portfolio Management quadrant. Four boxes. Every application you own fits into one of them, and each box tells you exactly what to do next.
