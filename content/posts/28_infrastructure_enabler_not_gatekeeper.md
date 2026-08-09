@@ -20,6 +20,48 @@ The language changes too. "We need to govern this." "That doesn't meet our stand
 
 None of it is malicious. It's the natural drift of any team that stops talking to its customers. When your only feedback loop is the ticket queue, every request starts to feel like an imposition.
 
+## The Two Models Side by Side
+
+The difference shows up in the small decisions. Same team, same platform, two very different answers:
+
+<table style="width:100%; border-collapse:collapse; margin:1.5em 0; font-size:0.95em;">
+  <tr>
+    <th style="border:1px solid #ddd; padding:10px; background:#f5f5f5; text-align:left;">Goal</th>
+    <th style="border:1px solid #ddd; padding:10px; background:#f5f5f5; text-align:left;">Acting as gatekeeper</th>
+    <th style="border:1px solid #ddd; padding:10px; background:#f5f5f5; text-align:left;">Acting as accelerator</th>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;"><strong>What they measure</strong></td>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;">Tickets closed, standards enforced</td>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;">How fast internal customers ship</td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;"><strong>When a request arrives</strong></td>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;">"Does it meet our process?"</td>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;">"How can we help you move faster?"</td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;"><strong>What standards are for</strong></td>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;">A weapon to keep teams in line</td>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;">A way to make building easier</td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;"><strong>When they have to say no</strong></td>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;">A wall</td>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;">Offer a viable alternative</td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;"><strong>Their feedback loop</strong></td>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;">The ticket queue</td>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;">Real conversations with the teams</td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;"><strong>Mission in practice</strong></td>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;">"You need to follow our process"</td>
+    <td style="border:1px solid #ddd; padding:10px; vertical-align:top;">"Let me help you make it fit"</td>
+  </tr>
+</table>
+
 ## What Enabling Actually Looks Like
 
 The teams I've seen do this well share a few patterns:
