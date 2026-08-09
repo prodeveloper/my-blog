@@ -1,7 +1,7 @@
 +++
 title = 'Write Tests That Read Like a Story'
-date = 2026-08-09T09:00:00Z
-draft = true
+date = 2026-08-10T09:00:00Z
+draft = false
 +++
 
 I spent a chunk of this week buried in test code across my repos, and it reminded me of a chapter from Software Engineering at Google that I keep coming back to. The chapter is about test clarity, and the core idea is simple: **a good test should read like a story, not like a method call.**
