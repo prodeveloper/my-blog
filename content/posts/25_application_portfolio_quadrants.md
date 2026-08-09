@@ -14,13 +14,32 @@ It's the Application Portfolio Management quadrant. Four boxes. Every applicatio
 
 Score each application on two axes: **business value** (how strategically important is it?) and **technical health** (how much debt, risk, or entropy has accumulated?). Plot them on a 2x2 grid, and you get four postures:
 
-**1. Grow / Evolve / Maintain.** High value, healthy tech. These are your stars. Keep investing, keep the team strong, don't let them atrophy through neglect. The risk here is complacency: assuming they'll stay healthy without deliberate attention.
-
-**2. Tolerate.** Low value, healthy tech. They exist for a reason, but they're not your future. Staff them lean, minimize cost, and figure out a plan to consolidate or retire them eventually. The trap is letting them linger forever, quietly draining budget.
-
-**3. Retire.** Low value, high debt. These are the hardest conversations because there are always people attached to them. But the math is clear: the cost of keeping them exceeds their contribution. Kill them, consolidate any salvageable function, and move on.
-
-**4. Reengineer / Modernize / Replace.** High value, high debt. These are the painful ones. They're critical to the business but have been mismanaged: short-term feature investment, no architectural care, a revolving door of leaders who kicked every can down the road. You can't ignore them because they matter. But fixing them is expensive, slow, and politically fraught.
+<table style="width:100%; border-collapse:collapse; margin:1.5em 0; font-size:0.95em;">
+  <tr>
+    <th style="border:1px solid #ddd; padding:10px; background:#f5f5f5; width:50%; text-align:left;">High value, healthy tech</th>
+    <th style="border:1px solid #ddd; padding:10px; background:#f5f5f5; width:50%; text-align:left;">High value, high debt</th>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ddd; padding:12px; vertical-align:top;">
+      <strong>1. Grow / Evolve / Maintain.</strong> These are your stars. Keep investing, keep the team strong, don't let them atrophy through neglect. The risk here is complacency: assuming they'll stay healthy without deliberate attention.
+    </td>
+    <td style="border:1px solid #ddd; padding:12px; vertical-align:top;">
+      <strong>4. Reengineer / Modernize / Replace.</strong> These are the painful ones. They're critical to the business but have been mismanaged: short-term feature investment, no architectural care, a revolving door of leaders who kicked every can down the road. You can't ignore them because they matter. But fixing them is expensive, slow, and politically fraught.
+    </td>
+  </tr>
+  <tr>
+    <th style="border:1px solid #ddd; padding:10px; background:#f5f5f5; text-align:left;">Low value, healthy tech</th>
+    <th style="border:1px solid #ddd; padding:10px; background:#f5f5f5; text-align:left;">Low value, high debt</th>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ddd; padding:12px; vertical-align:top;">
+      <strong>2. Tolerate.</strong> They exist for a reason, but they're not your future. Staff them lean, minimize cost, and figure out a plan to consolidate or retire them eventually. The trap is letting them linger forever, quietly draining budget.
+    </td>
+    <td style="border:1px solid #ddd; padding:12px; vertical-align:top;">
+      <strong>3. Retire.</strong> These are the hardest conversations because there are always people attached to them. But the math is clear: the cost of keeping them exceeds their contribution. Kill them, consolidate any salvageable function, and move on.
+    </td>
+  </tr>
+</table>
 
 ## Where This Bites
 

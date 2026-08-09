@@ -3,3 +3,6 @@ languageCode = "en"
 title = "ChenchaTech Blog"
 theme = "PaperMod"
 buildFuture = true
+
+[markup.goldmark.renderer]
+unsafe = true
