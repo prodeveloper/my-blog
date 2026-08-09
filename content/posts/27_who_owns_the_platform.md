@@ -12,7 +12,7 @@ It sounds obvious. You build it, you own it. But internal platforms are weird. T
 
 ## The RACI That Nobody Writes
 
-I was reading Eben Hewitt's *Technology Strategy Patterns* and came across something that made me stop. The RACI framework — Responsible, Accountable, Consulted, Informed. It's a project management staple, but Hewitt makes a point that hit home:
+I was reading Eben Hewitt's *Technology Strategy Patterns* and came across something that made me stop. The RACI framework: Responsible, Accountable, Consulted, Informed. It's a project management staple, but Hewitt makes a point that hit home:
 
 > The primary mistake I see people make in RACIs is the temptation to assign multiple people as accountable for a given item.
 
@@ -34,17 +34,17 @@ The moment I tried to make both compliance and engineering "accountable" for the
 
 ## The Life Cycle Lens
 
-Hewitt also talks about company life cycle stages — introduction, growth, maturity, decline — and how your tech strategy should shift with each one. This matters for platforms too.
+Hewitt also talks about company life cycle stages (introduction, growth, maturity, decline) and how your tech strategy should shift with each one. This matters for platforms too.
 
 A platform at a **growth-stage** company needs to prioritise speed and market fit. You ship fast, you iterate, you don't over-engineer. A platform at a **mature** company needs operational excellence, clear SLAs, and documented ownership. The same codebase, same team, different strategy.
 
-I think about nkosi this way. It's in a growth phase — new features landing weekly, the shape still evolving. But I'm already thinking about what maturity looks like. **The RACI I write today is the foundation for the governance I'll need tomorrow.**
+I think about nkosi this way. It's in a growth phase, with new features landing weekly and the shape still evolving. But I'm already thinking about what maturity looks like. **The RACI I write today is the foundation for the governance I'll need tomorrow.**
 
 ## The Value Chain Test
 
 The last piece that stuck with me is Porter's Value Chain. The idea is simple: map every activity in your organisation to see where value is actually created versus where it's just supported.
 
-For a platform team, this is humbling. Most of what we build is **support** — it enables value creation but doesn't create value directly. That's fine. But you need to know the difference. If you're spending 80% of your time on support activities and calling it product work, you're fooling yourself.
+For a platform team, this is humbling. Most of what we build is **support**: it enables value creation but doesn't create value directly. That's fine. But you need to know the difference. If you're spending 80% of your time on support activities and calling it product work, you're fooling yourself.
 
 I've started tagging my weekly work against the value chain. Inbound logistics (data ingestion), operations (transformation), outbound logistics (dashboard delivery). It's a useful forcing function. **If I can't map a task to a value chain activity, I question whether it needs doing.**
 

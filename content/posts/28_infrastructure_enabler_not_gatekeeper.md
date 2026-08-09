@@ -6,13 +6,13 @@ draft = true
 
 I've been reading Eben Hewitt's *Technology Strategy Patterns*, and one passage stopped me cold. It's about infrastructure teams and the trap they fall into.
 
-Hewitt describes two mentalities for infrastructure teams. The **enabler** provides quick, reliable support to the teams building customer-facing products. The **gatekeeper** uses standardization as a weapon — a way to keep the business units in line.
+Hewitt describes two mentalities for infrastructure teams. The **enabler** provides quick, reliable support to the teams building customer-facing products. The **gatekeeper** uses standardization as a weapon, a way to keep the business units in line.
 
 He doesn't mince words. "Overindexing on standardization for its own sake to the detriment of customers is missing the point at best and an abuse of power at worst."
 
 ## The Trap
 
-I've seen this play out in every organisation I've worked in. A central platform team gets formed to solve a real problem — consistency, security, operational excellence. They build standards, create templates, set up review gates. And slowly, imperceptibly, the mission shifts from "how can we help you move faster?" to "you need to follow our process."
+I've seen this play out in every organisation I've worked in. A central platform team gets formed to solve a real problem: consistency, security, operational excellence. They build standards, create templates, set up review gates. And slowly, imperceptibly, the mission shifts from "how can we help you move faster?" to "you need to follow our process."
 
 The language changes too. "We need to govern this." "That doesn't meet our standards." "You'll need to submit a request."
 
@@ -30,7 +30,7 @@ The teams I've seen do this well share a few patterns:
 
 ## Where This Hits Home
 
-I've been spending time on **nkosi** recently — our internal dashboard and automation platform. The work has been about making the agents report more useful, getting the action scan to auto-resolve, and cleaning up the per-section history so it keeps the last 30 entries instead of overwriting.
+I've been spending time on **nkosi** recently, our internal dashboard and automation platform. The work has been about making the agents report more useful, getting the action scan to auto-resolve, and cleaning up the per-section history so it keeps the last 30 entries instead of overwriting.
 
 This is classic enabler work. The platform exists so other things can run on top of it. Every improvement I make to nkosi is an improvement to every system that depends on it. That's the leverage of good infrastructure.
 
@@ -38,7 +38,7 @@ But I can feel the gatekeeper pull too. When I'm tempted to say "that doesn't fi
 
 ## The Wardrobe Test
 
-Hewitt has a simpler test. He asks whether your infrastructure team would pass the "wardrobe test" — whether the people running it see themselves as serving the business or policing it.
+Hewitt has a simpler test. He asks whether your infrastructure team would pass the "wardrobe test": whether the people running it see themselves as serving the business or policing it.
 
 It's a good question to ask yourself regularly. Not annually in a retrospective. Every week, in the decisions you make about what to prioritise and how to respond to requests.
 

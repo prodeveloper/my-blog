@@ -12,19 +12,19 @@ It's the Application Portfolio Management quadrant. Four boxes. Every applicatio
 
 Score each application on two axes: **business value** (how strategically important is it?) and **technical health** (how much debt, risk, or entropy has accumulated?). Plot them on a 2x2 grid, and you get four postures:
 
-**1. Grow / Evolve / Maintain.** High value, healthy tech. These are your stars. Keep investing, keep the team strong, don't let them atrophy through neglect. The risk here is complacency — assuming they'll stay healthy without deliberate attention.
+**1. Grow / Evolve / Maintain.** High value, healthy tech. These are your stars. Keep investing, keep the team strong, don't let them atrophy through neglect. The risk here is complacency: assuming they'll stay healthy without deliberate attention.
 
 **2. Tolerate.** Low value, healthy tech. They exist for a reason, but they're not your future. Staff them lean, minimize cost, and figure out a plan to consolidate or retire them eventually. The trap is letting them linger forever, quietly draining budget.
 
 **3. Retire.** Low value, high debt. These are the hardest conversations because there are always people attached to them. But the math is clear: the cost of keeping them exceeds their contribution. Kill them, consolidate any salvageable function, and move on.
 
-**4. Reengineer / Modernize / Replace.** High value, high debt. These are the painful ones. They're critical to the business but have been mismanaged — short-term feature investment, no architectural care, a revolving door of leaders who kicked every can down the road. You can't ignore them because they matter. But fixing them is expensive, slow, and politically fraught.
+**4. Reengineer / Modernize / Replace.** High value, high debt. These are the painful ones. They're critical to the business but have been mismanaged: short-term feature investment, no architectural care, a revolving door of leaders who kicked every can down the road. You can't ignore them because they matter. But fixing them is expensive, slow, and politically fraught.
 
 ## Where This Bites
 
-I've been spending time on **nkosi** recently — fixing the agents report, making the action scan auto-resolve, cleaning up the per-section history so it keeps the last 30 entries instead of overwriting. That's a Grow quadrant play. The system is valuable and the tech is solid. The work is about keeping it that way.
+I've been spending time on **nkosi** recently, fixing the agents report, making the action scan auto-resolve, cleaning up the per-section history so it keeps the last 30 entries instead of overwriting. That's a Grow quadrant play. The system is valuable and the tech is solid. The work is about keeping it that way.
 
-Meanwhile, **compliance** sits in a different posture. It's high value — we need it — but the technical state requires attention. That's the Reengineer box. The work is harder, slower, and requires more stakeholder conversations. But the quadrant tells you not to look away.
+Meanwhile, **compliance** sits in a different posture. It's high value and we need it, but the technical state requires attention. That's the Reengineer box. The work is harder, slower, and requires more stakeholder conversations. But the quadrant tells you not to look away.
 
 The mistake I see most often is treating everything like it belongs in the same box. Every application gets the same investment model, the same staffing approach, the same urgency. That's how you end up starving your stars while over-investing in things that should be retired.
 
