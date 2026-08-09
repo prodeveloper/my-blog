@@ -1,7 +1,7 @@
 +++
 title = 'The Four Things You Can Do With Any Application'
 date = 2026-07-28T09:00:00+01:00
-draft = true
+draft = false
 +++
 
 ![A portfolio of applications](/images/25-data-sources.png)

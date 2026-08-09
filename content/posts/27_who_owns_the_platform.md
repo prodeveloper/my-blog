@@ -1,7 +1,7 @@
 +++
 title = 'Who Owns the Platform?'
 date = 2026-08-04T09:00:00Z
-draft = true
+draft = false
 +++
 
 ![A layered platform stack](/images/27-orchestration-layers.png)

@@ -12,8 +12,8 @@ fi
 COUNT=$(grep -o '—' "$FILE" | wc -l | tr -d ' ')
 echo "$COUNT em-dashes in $FILE"
 
-if [ "$COUNT" -gt 5 ]; then
-  echo "⚠️  Over limit ($COUNT > 5) — needs rework"
+if [ "$COUNT" -gt 2 ]; then
+  echo "⚠️  Over limit ($COUNT > 2) — needs rework"
   exit 1
 else
   echo "✅ Within limit"

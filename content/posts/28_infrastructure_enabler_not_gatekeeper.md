@@ -1,7 +1,7 @@
 +++
 title = 'Infrastructure Teams: Enabler, Not Gatekeeper'
 date = 2026-08-06T09:00:00+01:00
-draft = true
+draft = false
 +++
 
 ![Infrastructure hardware](/images/28-infrastructure.jpeg)

@@ -1,7 +1,7 @@
 +++
 title = 'Write the Headlines First'
 date = 2026-07-30T09:00:00Z
-draft = true
+draft = false
 +++
 
 ![Executives in a boardroom](/images/26-slt-bosses-executives.jpg)
