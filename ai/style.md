@@ -55,3 +55,13 @@ Where genuinely relevant, link to existing posts inline. Don't force it. Use the
 - Over-explaining — trust the reader
 - Excessive superlatives applied to real people ("great, great, great engineer")
 - **Em dashes (`—`)** — a common AI tell. Use a comma, colon, or restructure the sentence instead
+
+## Share the Lesson, Not the Facts
+
+The blog is public. Work is the inspiration, never the content.
+
+- No employer, client, auditor or colleague names, no ticket or change IDs, no internal system names.
+- No live numbers from work tools. Say the situation exists and that it is being managed: "a long list of open findings I work through every week", not "251 open Snyk findings".
+- Better still, tell an example close to the real one, or an allegory (a garden, a kitchen, a household budget) that makes the same point.
+- Never use "honest" or "honestly", and no em or en dashes at all.
+- Run `python3 scripts/check_draft.py <post>` before publishing. It must print PASS.
