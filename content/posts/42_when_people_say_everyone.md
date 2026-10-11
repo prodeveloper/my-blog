@@ -1,7 +1,7 @@
 +++
 title = 'When People Say Everyone, They Never Mean Everyone'
 date = 2026-10-06T09:00:00Z
-draft = true
+draft = false
 +++
 
 "Everyone needs to sign this off." "Nobody uses that feature." "All the teams are blocked."
@@ -24,9 +24,9 @@ I've been rolling out document sign-off across a set of compliance documents. Ea
 - All signers now, or including the people appointed next month?
 - Does "approved by" mean the person in the role, or the person named in the delegation of authority?
 
-Each question shrank "all" into a set I could list. **Once the set had members with names, the design got easy.** We turned signer emails off for the first rollout, because the honest domain was "a small group we can talk to directly," not "everyone."
+Each question shrank "all" into a set I could list. **Once the set had members with names, the design got easy.** We turned signer emails off for the first rollout, because the real domain was "a small group we can talk to directly," not "everyone."
 
-The same pattern shows up in blocker tracking. "We're blocked on access" sounds like one thing. Push on it and it becomes three tickets, two teams, and one person waiting on one approval for 48 days. That's a claim you can act on.
+The same pattern shows up in blocker tracking. "We're blocked on access" sounds like one thing. Push on it and it becomes three tickets, two teams, and one person who has waited weeks on a single approval. That's a claim you can act on.
 
 ## One Thing or Two Things
 
@@ -42,7 +42,7 @@ Drawing the domain is what makes that possible. You can't test a hypothesis abou
 
 ## Remember
 
-- When you hear "everyone," "nobody," or "always," ask who is actually in the set.
+- When you hear "everyone," "nobody," or "always," ask who is in the set.
 - Write down the members before you design anything for them.
 - Check whether two things are one thing before you split or merge them.
 - Make a claim early, then let the data change your mind.

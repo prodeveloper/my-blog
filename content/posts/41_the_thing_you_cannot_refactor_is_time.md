@@ -1,7 +1,7 @@
 +++
 title = 'The Thing You Cannot Refactor Is Time'
 date = 2026-10-01T09:00:00+01:00
-draft = true
+draft = false
 +++
 
 I finished *Software Engineering at Google* this week. Eighty-eight sections in, the part that stayed with me wasn't the chapter on build systems or the one on testing. It was the afterword, five pages from the end, where Asim Husain writes one sentence that I have not been able to get out of my head.
@@ -20,11 +20,11 @@ The uncomfortable part is that a codebase has a lifespan and no one tells you ho
 
 ## The number that never gets to zero
 
-This week my Snyk reports came back at 251 open findings and 102 fixed. I've watched that number move for months. It has never gone to zero, and I've stopped pretending it should.
+Every week I look at a security report with a long list of open findings. I've watched that list move for months. It has never gone to zero, and I've stopped pretending it should.
 
 For a long time that bothered me. If you treat a finding list like a project, an endless list looks like failure. **If you treat it like a garden, an endless list is just what a garden is.** The goal was never a clean report. The goal is a trend that says you are keeping up, and a process that survives the person who set it up leaving.
 
-That is the difference between a fix and a practice. A fix closes a ticket. A practice keeps closing tickets after you have stopped looking at them. One of those survives time. The other is a story you tell at a retrospect.
+That is the difference between a fix and a practice. A fix closes a ticket. A practice keeps closing tickets after you have stopped looking at them. One of those survives time. The other is a story you tell at a retrospective.
 
 ## Agility is not speed, it is durability
 
@@ -36,7 +36,7 @@ This is also why the book keeps circling back to versioning, deprecation, and lo
 
 ## Why the combination is rare
 
-Husain makes an admission worth quoting honestly: very few organizations have achieved *both* sustainability and scale. Most pick one.
+Husain makes an admission worth quoting: very few organizations have achieved *both* sustainability and scale. Most pick one.
 
 - Startups get speed and spend it on debt they never repay.
 - Large organizations get stability and calcify into change that costs a quarter of engineering to make.

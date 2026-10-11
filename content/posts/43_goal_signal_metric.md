@@ -1,7 +1,7 @@
 +++
 title = 'Goal, Signal, Metric: Say What You Want Before You Count It'
 date = 2026-10-08T09:00:00Z
-draft = true
+draft = false
 +++
 
 Most dashboards I've built started with the numbers. Something was easy to count, so I counted it, then went looking for a reason it mattered. Chapter 7 of *Software Engineering at Google* runs it in the other direction, and I think it's the right way round.
@@ -16,7 +16,7 @@ Google's engineering productivity team evaluated their readability process (the 
 
 **The metric is the last thing you write, not the first.** It's a proxy, and you can only judge a proxy if you know what it's standing in for.
 
-## QUANTS Keeps You Honest
+## QUANTS Stops One Number Fooling You
 
 They group goals under five headings: Quality of the code, Attention from engineers, iNtellectual complexity, Tempo and velocity, and Satisfaction. The point isn't the acronym. **The point is that one metric on its own will lie to you.** If readability made code more consistent but doubled review latency, a quality-only dashboard would call it a win.
 
@@ -24,9 +24,9 @@ Some of their metrics are also framed in the negative: the proportion of enginee
 
 ## Where I See This at Work
 
-This week I've had a Snyk report tick over to 166 open and 253 fixed, and a daily plan feasibility check running against delivery dates. Both are metrics. Neither is a goal.
+I keep an eye on a security report where the fixed findings now outnumber the open ones, and a daily check on whether delivery plans are still realistic. Both are metrics. Neither is a goal.
 
-- For Snyk, the goal is closer to "we don't ship exploitable vulnerabilities," and the signal is "nothing exploitable reaches production." A falling open count could mean that, or it could mean we fixed the easy ones and left the reachable criticals.
+- For the security report, the goal is closer to "we don't ship exploitable vulnerabilities," and the signal is "nothing exploitable reaches production." A falling open count could mean that, or it could mean we fixed the easy ones and left the reachable criticals.
 - For plan feasibility, the goal is "commitments we make are ones we keep." A re-dated ticket improves the overdue count without improving that at all.
 
 **When a number moves, I want to be able to say which signal it moved toward.** If I can't, I'm watching a scoreboard, not managing anything.
