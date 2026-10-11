@@ -1,7 +1,7 @@
 +++
 title = 'Porter Five Forces for Technologists'
 date = 2026-09-15T09:00:00Z
-draft = true
+draft = false
 +++
 
 ## The analysis the business already did in their heads
@@ -32,14 +32,14 @@ In an emerging technology, there are a handful of pioneers and incredible differ
 
 ## Why the technologist should own this
 
-Hewitt gives four steps for putting the Five Forces to work, and they are genuinely useful:
+Hewitt gives four steps for putting the Five Forces to work, and they are useful:
 
 1. Make a slide for each force and name how the company is positioned.
 2. Make a claim about how your proposed technology supports or defends against each force.
 3. Tag each threat with a traffic light: red, yellow, green.
 4. Write succinct recommendations on how to position against each.
 
-The reason this matters for us is that business leaders carry this analysis in their heads. When you walk in with it written down, through the lens of your software portfolio and your platform decisions, you are not just a spectator waiting for the rain to start. You are the one who can say why the platform investment defends against substitution, or why the compliance automation actually raises the barrier to entry for competitors.
+The reason this matters for us is that business leaders carry this analysis in their heads. When you walk in with it written down, through the lens of your software portfolio and your platform decisions, you are not just a spectator waiting for the rain to start. You are the one who can say why the platform investment defends against substitution, or why the compliance automation raises the barrier to entry for competitors.
 
 ## Remember
 

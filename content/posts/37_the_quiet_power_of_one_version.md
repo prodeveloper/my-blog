@@ -1,10 +1,8 @@
 +++
 title = 'The Quiet Power of One Version'
 date = 2026-09-17T09:00:00+01:00
-draft = true
+draft = false
 +++
-
----
 
 A rule Winters describes in the Software Engineering at Google material keeps coming back to me: **developers must never have a choice about which version of a component they depend on.** On its face it sounds restrictive. Remove choice from engineers and you are removing agency, right? But the more I run systems, the more I think he is pointing at something deeper. Removing the choice is not a restriction. It is the thing that lets the organization scale.
 
@@ -24,7 +22,7 @@ I run a handful of small repos rather than a monorepo, so the literal Google set
 
 ## Monorepo is not the point
 
-The interesting part of the chapter is Winters being honest that the monorepo is not the One True Way. A monorepo just happens to make One Version nearly effortless, because it is harder to violate the rule than to follow it. But fine-grained repositories, virtual monorepos, git submodules, all of these can give you the same outcome if you hold the principle.
+The interesting part of the chapter is Winters admitting that the monorepo is not the One True Way. A monorepo just happens to make One Version nearly effortless, because it is harder to violate the rule than to follow it. But fine-grained repositories, virtual monorepos, git submodules, all of these can give you the same outcome if you hold the principle.
 
 **What matters is not how you store the code. It is that you adhere to One Version to the greatest extent possible.** The storage format is a detail, like choosing a filesystem. What you write to it matters more than the format itself.
 

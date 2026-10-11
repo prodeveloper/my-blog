@@ -1,10 +1,8 @@
 +++
 title = 'A Pile of Tools Is Not a Strategy'
 date = 2026-09-22T09:00:00+01:00
-draft = true
+draft = false
 +++
-
----
 
 I have been spending a lot of my working hours lately on compliance automation, vulnerability backlogs, and the dashboards that try to hold all of it together. Somewhere in the middle of that, reading Eben Hewitt's *Technology Strategy Patterns*, I hit a line that made me stop and audit my own work.
 
@@ -52,8 +50,8 @@ That omission is not an accident. It is a stance. Those three words drive a comp
 
 ## Where this leaves me
 
-The honest version of my checklist now looks like this. Before I add anything, I ask what practice it serves. Before I can name the practice, I have to know which principle it realizes. And if I cannot answer either question, the thing does not get added, no matter how good the demo was.
+The real version of my checklist now looks like this. Before I add anything, I ask what practice it serves. Before I can name the practice, I have to know which principle it realizes. And if I cannot answer either question, the thing does not get added, no matter how good the demo was.
 
 Hewitt's warning is that without this, you get less efficiency, less clarity, and less harmony, a diverse collection of overlapping tools, and a widening gap between what people do every day and where the strategy claims to be going.
 
-The gap is quiet. It does not show up as an outage or a missed date. It shows up as a team that is working hard on things that turn out not to matter. That is worth an hour of auditing, and it costs nothing but honesty.
+The gap is quiet. It does not show up as an outage or a missed date. It shows up as a team that is working hard on things that turn out not to matter. That is worth an hour of auditing, and the only cost is admitting what you find.

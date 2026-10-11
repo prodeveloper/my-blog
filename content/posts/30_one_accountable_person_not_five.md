@@ -1,10 +1,10 @@
 +++
 title = 'One Accountable Person, Not Five'
 date = 2026-08-11T09:00:00Z
-draft = true
+draft = false
 +++
 
-I have been building my ISMS dashboard and closing CAPA items this week, and it got me thinking about a chapter from Eben Hewitt's Technology Strategy Patterns. The chapter covers three things that look boring on paper but quietly determine whether your strategy lands: the RACI, the company life cycle, and the value chain.
+I have been deep in compliance work this week, and it got me thinking about a chapter from Eben Hewitt's Technology Strategy Patterns. The chapter covers three things that look boring on paper but quietly determine whether your strategy lands: the RACI, the company life cycle, and the value chain.
 
 The RACI is the one I keep coming back to, because it is the cheapest way to kill confusion on any project.
 

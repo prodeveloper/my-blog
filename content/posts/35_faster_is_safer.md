@@ -1,7 +1,7 @@
 +++
 title = 'Faster Is Safer'
 date = 2026-09-10T09:00:00Z
-draft = true
+draft = false
 +++
 
 I keep coming back to a line from Software Engineering at Google that sounds wrong until you sit with it: **faster is safer**. The health of a product and the speed of development are not in opposition. Products that release more often, in small batches, have better quality outcomes. They adapt faster to bugs found in the wild and to unexpected market shifts.

@@ -1,7 +1,7 @@
 +++
 title = 'After This, Therefore Because of This'
 date = 2026-09-29T09:00:00+01:00
-draft = true
+draft = false
 +++
 
 The first question on every incident bridge is always the same. What changed?
